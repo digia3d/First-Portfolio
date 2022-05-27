@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +7,14 @@
 }
 
 body {
-  background: #191765;
-height: 5415px;
-width: 375px;
-left: 4127px;
-top: -2311px;
-border-radius: 0px;
-
-
+ background: #191765;
+ height: 5415px;
+ width: 375px;
+ left: 4127px;
+ top: -2311px;
+ border-radius: 0px;
 }
+
 .backgraund {
   display: flex;
   position: absolute;
@@ -40,8 +40,6 @@ width: 105px;
 margin-left: 24px;
 margin-top: 50px;
 border-radius: 0px;
-
-
 }
 
 .logo {
@@ -68,7 +66,6 @@ flex-grow: 0;
   margin-right: 24px;
   border-radius: 8px;
   background: transparent;
-
 }
 
 .headline {
@@ -84,6 +81,7 @@ flex-grow: 0;
   height: 1316.15px;
   position: absolute;
 }
+
 .title {
   display: flex;
   flex-direction: column;
@@ -111,8 +109,8 @@ left: 0px;
 top: 67px;
 border-radius: nullpx;
 text-align: center;
-
 }
+
 h2 {
   font-family: Roboto;
 font-size: 32px;
@@ -131,9 +129,8 @@ padding: 0px;
 gap: 24px;
 margin-left: 24px;
 margin-right: 24px;
-
-
 }
+
 p {
   font-family: 'Roboto';
 font-style: normal;
@@ -183,7 +180,6 @@ flex-direction: row;
 align-items: center;
 padding: 5.33333px 8px;
 gap: 8px;
-
 width: 123px;
 height: 26.67px;
 }
@@ -207,7 +203,6 @@ align-items: flex-start;
 padding: 0px 7.16667px;
 gap: 4.78px;
 color: #F5F5FF;
-;
 width: 111.08px;
 height: 128.67px;
 }
@@ -232,7 +227,6 @@ flex-direction: row;
 align-items: center;
 padding: 5.33333px 8px;
 gap: 8px;
-
 width: 156px;
 height: 26.67px;
 flex: none;
@@ -263,7 +257,6 @@ gap: 8px;
 flex: none;
 order: 0;
 flex-grow: 0;
-
 }
 
 h4 {
@@ -289,8 +282,6 @@ flex: none;
 order: 2;
 flex-grow: 0;
 }
-
-
 
 .devider2 {
   width: 327px;
