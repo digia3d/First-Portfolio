@@ -44,7 +44,7 @@ h2 {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .logo {
@@ -56,7 +56,7 @@ h2 {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
-  color: #ffffff;
+  color: #fff;
   align-items: center;
   letter-spacing: 0.03em;
   flex: none;
@@ -117,7 +117,7 @@ h5 {
   font-weight: 500;
   line-height: 44px;
   text-align: center;
-  color: #edecff;  
+  color: #edecff;
 }
 
 article {
@@ -190,7 +190,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px 7.16px;
+  padding: 0 7.16px;
   gap: 4.78px;
   color: #f5f5ff;
   width: 111.08px;
