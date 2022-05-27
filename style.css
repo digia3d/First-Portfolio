@@ -37,13 +37,15 @@ body {
   margin-top: 50px;
 }
 
-h5 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 32px;
+h2 {
+  font-family: Roboto;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 44px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   text-align: center;
-  color: #edecff;
+  color: #ffffff;
+  
 }
 
 .logo {
@@ -93,12 +95,12 @@ h5 {
   text-align: center;
 }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
+h3 {
+  font-family: Roboto;
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
-  letter-spacing: 0.37px;
+  letter-spacing: 0.3700000047683716px;
   text-align: center;
   color: #7d73fc;
 }
@@ -110,13 +112,14 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h5 {
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
+  letter-spacing: 0em;
   text-align: center;
-  color: #edecff;
+  color: #edecff;  
 }
 
 article {
@@ -180,15 +183,13 @@ li {
   height: 26.67px;
 }
 
-h3 {
-  font-family: 'Roboto', sans-serif;
+h4 {
+  font-family: Roboto;
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-  width: 107px;
-  height: 16px;
   color: #9490ff;
 }
 
