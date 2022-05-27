@@ -8,10 +8,6 @@
 
 body {
   background: #191765;
-  height: 5415px;
-  width: 375px;
-  left: 4127px;
-  top: -2311px;
 }
 
 .backgraund {
@@ -80,9 +76,10 @@ h2 {
   top: 19px;
   padding: 120px 24px;
   gap: 40px;
-  width: 375px;
+  width: auto;
   height: 1316.15px;
   position: absolute;
+  margin: auto;
 }
 
 .title {
