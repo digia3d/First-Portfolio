@@ -8,6 +8,7 @@
 
 body {
   background: #191765;
+  width: auto;
 }
 
 .backgraund {
@@ -47,17 +48,21 @@ h2 {
   display: flex;
   width: 81px;
   height: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
   line-height: 16px;
-  color: #fff;
   align-items: center;
   letter-spacing: 0.03em;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+#logo {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .button {
@@ -91,7 +96,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
   font-weight: 700;
@@ -157,6 +162,7 @@ p {
   height: 167.33px;
   flex: none;
   align-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -192,6 +198,7 @@ ul {
   color: #f5f5ff;
   width: 111.08px;
   height: 128.67px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .frameworks {
@@ -221,7 +228,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 4.78px;
   margin-left: 36px;
   width: 122px;
   height: 224px;
@@ -254,7 +261,7 @@ ul {
   width: 327px;
   height: 17px;
   flex: none;
-  order: 3;
+  order: 0;
 }
 
 .social {
