@@ -37,6 +37,16 @@ body {
   margin-top: 50px;
 }
 
+h5 {
+  font-family: Roboto;
+ font-size: 32px;
+ font-weight: 500;
+ line-height: 44px;
+ letter-spacing: 0em;
+ text-align: center;
+ color: #edecff;
+}
+
 .logo {
   display: flex;
   width: 81px;
@@ -84,7 +94,7 @@ body {
   text-align: center;
 }
 
-h1 {
+h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
   font-weight: 700;
@@ -101,7 +111,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 500;
