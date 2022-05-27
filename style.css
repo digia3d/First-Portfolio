@@ -38,7 +38,7 @@ body {
 }
 
 h2 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 16px;
@@ -96,11 +96,11 @@ h2 {
 }
 
 h3 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
-  letter-spacing: 0.3700000047683716px;
+  letter-spacing: 0.37px;
   text-align: center;
   color: #7d73fc;
 }
@@ -117,7 +117,6 @@ h5 {
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: center;
   color: #edecff;  
 }
@@ -145,15 +144,12 @@ p {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
   gap: 24px;
   margin-left: 36px;
   margin-right: 36px;
   width: 303px;
   height: 214.15px;
   flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .language {
@@ -164,8 +160,6 @@ p {
   width: 123px;
   height: 167.33px;
   flex: none;
-  order: 0;
-  flex-grow: 0;
   align-content: center;
 }
 
@@ -184,7 +178,7 @@ li {
 }
 
 h4 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
@@ -214,7 +208,6 @@ ul {
   height: 214.15px;
   flex: none;
   order: 1;
-  flex-grow: 0;
 }
 
 .title-frame {
@@ -226,8 +219,6 @@ ul {
   width: 156px;
   height: 26.67px;
   flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .skills {
@@ -240,7 +231,6 @@ ul {
   height: 224px;
   flex: none;
   order: 1;
-  flex-grow: 0;
 }
 
 .title-skills {
@@ -250,8 +240,6 @@ ul {
   padding: 5.3px 8px;
   gap: 8px;
   flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 h4 {
@@ -274,7 +262,6 @@ h4 {
   height: 104px;
   flex: none;
   order: 2;
-  flex-grow: 0;
 }
 
 .devider2 {
@@ -282,7 +269,6 @@ h4 {
   height: 17px;
   flex: none;
   order: 3;
-  flex-grow: 0;
 }
 
 .social {
@@ -293,7 +279,5 @@ h4 {
   width: 200px;
   height: 40px;
   flex: none;
-  order: 0;
-  flex-grow: 0;
   gap: 10px;
 }
