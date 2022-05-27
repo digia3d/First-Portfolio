@@ -38,13 +38,12 @@ body {
 }
 
 h5 {
-  font-family: Roboto;
- font-size: 32px;
- font-weight: 500;
- line-height: 44px;
- letter-spacing: 0em;
- text-align: center;
- color: #edecff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: center;
+  color: #edecff;
 }
 
 .logo {
