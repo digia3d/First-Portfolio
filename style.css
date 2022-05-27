@@ -242,16 +242,6 @@ ul {
   flex: none;
 }
 
-h4 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: #9490ff;
-}
-
 .items {
   display: flex;
   flex-direction: column;
