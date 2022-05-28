@@ -15,7 +15,7 @@ body {
 .backgraund {
   display: flex;
   position: absolute;
-  width: 513px;
+  width: 100%;
   height: 563px;
   left: -106px;
 }
@@ -279,9 +279,11 @@ ul {
 /* Section Works */
 
 .works {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  align-content: center;
   top: 1175px;
   padding: 120px;
   gap: 40px;
@@ -305,7 +307,7 @@ ul {
   flex: none;
   order: 0;
   flex-grow: 0;
-  top: 120px;
+  margin-top: 250px;
   bottom: 41px;
 }
 
@@ -412,7 +414,7 @@ h3 {
   gap: 8px;
 }
 
-.grid-container > div {
+.grid-container > ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -450,7 +452,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 34px;
   width: 327px;
   height: 469px;
   flex: none;
