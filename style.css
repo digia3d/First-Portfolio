@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
 
 * {
   margin: 0;
@@ -14,7 +15,7 @@ body {
 .backgraund {
   display: flex;
   position: absolute;
-  width: 513px;
+  width: 100%;
   height: 563px;
   left: -106px;
 }
@@ -81,7 +82,7 @@ h2 {
   top: 19px;
   padding: 120px 24px;
   gap: 40px;
-  width: auto;
+  width: 100%;
   height: 1316.15px;
   position: absolute;
   margin: auto;
@@ -273,4 +274,210 @@ ul {
   height: 40px;
   flex: none;
   gap: 10px;
+}
+
+/* Section Works */
+
+.works {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  align-content: center;
+  top: 1175px;
+  padding: 120px;
+  gap: 40px;
+  width: 100%;
+  height: 3461px;
+  position: absolute;
+  margin: auto;
+  background-image: url("img/work/portfolio-background-shapes-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  gap: 24px;
+  width: 375px;
+  height: 145px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 250px;
+  bottom: 41px;
+}
+
+.devider3 {
+  height: 17px;
+  width: 327px;
+  left: 24px;
+  top: 128px;
+}
+
+.vector {
+  top: 9px;
+  border: 1px solid #646369;
+}
+
+#works {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  left: 24px;
+  display: flex;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: auto;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.featured-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.img-placeholder {
+  background:
+    linear-gradient(0deg, #f9f9f9, #f9f9f9),
+    url(img/work/Img-Placeholder.png);
+  color: #f9f9f9;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  color: #fff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  flex: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 49px 56px 95px 61px;
+  grid-template-rows: 40px;
+  justify-content: center;
+  align-content: center;
+  width: 312px;
+  height: 40px;
+  gap: 8px;
+}
+
+.grid-container > ul {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 20px;
+  color: #fff;
+}
+
+.item1 {
+  border-right: 1px solid #555;
+  padding-top: 10px;
+  justify-items: center;
+}
+
+.item2 {
+  border-right: 1px solid #555;
+  padding-top: 10px;
+  justify-items: center;
+}
+
+.item3 {
+  border-right: 1px solid #555;
+  padding-top: 10px;
+  justify-items: center;
+}
+
+.item4 {
+  border-right: 1px solid #555;
+  padding-top: 10px;
+  justify-items: center;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+  width: 327px;
+  height: 469px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #edecff;
+  background: #7d73fc;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 89px;
+  height: 48px;
+  border: none;
 }
