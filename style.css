@@ -274,3 +274,48 @@ ul {
   flex: none;
   gap: 10px;
 }
+
+/* Section Works */
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 1175px;
+  padding: 120px;
+  gap: 40px;
+  width: auto;
+  height: 3461px;
+  position: absolute;
+  margin: auto;
+  background-image: url("img/work/portfolio-background-shapes-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  gap: 24px;
+  width: 375px;
+  height: 145px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#works {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  left: 24px;
+  display: flex;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
