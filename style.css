@@ -492,9 +492,35 @@ button {
   gap: 40px;
 }
 
-.items {
-  border-top: 1px solid grey;
+.items-icon {
+  display: flex;
+  flex-direction: row;
 }
-/* 
+
 .footer {
-} */
+  display: flex;
+}
+
+.h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9390ff;
+}
+
+input {
+  height: 48px;
+  width: 100%;
+  margin: 24px 0;
+}
+
+textarea {
+  height: 148px;
+  width: 100%;
+  margin-top: 24px;
+}
