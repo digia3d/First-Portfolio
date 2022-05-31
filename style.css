@@ -10,6 +10,7 @@
 body {
   background: #191765;
   width: auto;
+  height: 100%;
 }
 
 .backgraund {
@@ -481,3 +482,19 @@ button {
   height: 48px;
   border: none;
 }
+
+.contact-page {
+  margin-top: 4600px;
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.items {
+  border-top: 1px solid grey;
+}
+/* 
+.footer {
+} */
