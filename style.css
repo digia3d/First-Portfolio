@@ -528,6 +528,11 @@ textarea {
   margin-top: 24px;
 }
 
+form button {
+  margin-left: 12rem;
+  margin-top: 40px;
+}
+
 .button-footer {
   display: flex;
   flex-direction: row;
