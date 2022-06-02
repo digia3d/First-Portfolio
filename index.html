@@ -20,24 +20,50 @@
 </head>
 
 <body>
-  <img class="backgraund" src="img/top-circles.svg" alt="circles">
-
   <header>
     <nav class="nav-bar">
-      <div class="placeholder">
-        <div class="logo">
-          <a id="logo" href="#">John Doe</a>
-        </div>
+      <div class="logo">
+        <a id="logo" href="#">John Doe</a>
       </div>
+
+      <ul class="links">
+        <li>
+          <a href="#">Portoflio</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <button class="mail"><img src="img/Desktop/Union.png" alt=""></button>
+        </li>
+
+      </ul>
+
       <div class="button">
         <div>
-          <img src="img/Union.png" alt="hamburger icon">
+          <img class="hamburger" src="img/Union.png" alt="hamburger icon">
         </div>
       </div>
     </nav>
   </header>
 
   <section class="headline">
+
+    <div>
+      <img class="backgraund" src="img/Desktop/Ellipse-18.svg" alt="circles">
+    </div>
+    <div>
+      <img class="circle" src="img/Desktop/circle-2-header@2x.png" alt="circles">
+    </div>
+    <div>
+      <img class="moon" src="img/Desktop/circle-2-header@2x.png" alt="circles">
+    </div>
+
+
+
     <div class="title">
       <h1>Aleksandra Ujvari</h1>
     </div>
@@ -45,15 +71,18 @@
       <h5>Software Developer</h5>
     </div>
     <article>
-      <p>
-        I can help you build a product , feature or website Look through some of my work and experience! If you like
-        what you see and have a project you need coded, do not hestiate to contact me.
-      </p>
+      <div>
+        <img class="ellipse" src="img/Desktop/Ellipse-19.svg" alt="circles">
+      </div>
+      <div>
+        <p>
+          I can help you build a product , feature or website Look through some of my work and experience! If you like
+          what you see and have a project you need coded, do not hestiate to contact me.
+        </p>
+      </div>
     </article>
 
-    <div class="devider">
-      <img src="img/Vector-4.svg" alt="devider">
-    </div>
+
 
     <section class="supporting-text">
       <article class="frame46">
@@ -83,6 +112,7 @@
             </ul>
           </div>
         </div>
+
       </article>
       <div class="skills">
         <div class="title-skills">
@@ -96,13 +126,13 @@
           <li>Terminal</li>
         </ul>
       </div>
+
     </section>
 
-    <div class="devider">
-      <img src="img/Vector-4.svg" alt="devider">
-    </div>
-
     <div class="items">
+      <div class="element">
+        <img src="img/Element-Right.png" alt="work">
+      </div>
       <ul class="social">
         <li class="icon"><img src="img/Icon-GitHub.png" alt=""></li>
         <li class="icon"><img src="img/Icon-Linkedin.png" alt=""></li>
@@ -118,17 +148,13 @@
 
   <section class="works">
     <div class="title-work">
-      <h1 id="works">MY RECENT WORK</h1>
-    </div>
-    <div class="devider">
-      <img class="vector-4" src="img/Vector-4.svg" alt="devider">
+      <h1 id="works">My recent work</h1>
     </div>
 
     <div class="articles">
 
-
       <article class="stories">
-        <div class="featured-img">
+        <div class="featured-img" id="multi">
           <div class="img-placeholder">
             <a href="#"><img src="img/work/Img-Placeholder.png" alt=""></a>
           </div>
@@ -170,7 +196,7 @@
         </div>
       </article>
       <article class="stories">
-        <div class="featured-img">
+        <div class="featured-img" id="multi-post">
           <div class="img-placeholder">
             <a href="#"><img src="img/work/Img-Placeholder.png" alt=""></a>
           </div>
@@ -217,7 +243,7 @@
   <section class="contact-page">
     <article class="contact">
       <h3 class="h3">
-        CONTACT US
+        Let’s chat!
       </h3>
       <p>
         If you have an application you are interested in developing, a feature that you need built or a project that
@@ -235,13 +261,13 @@
         <label for="msg">
           <textarea name="user_massage" id="msg" cols="30" rows="10" maxlength="500">Enter text here</textarea>
         </label>
-        
-          <button type="submit">See Project</button>
-        
+
+        <button type="submit" id="button-footer">See Project</button>
+
       </form>
 
     </article>
-    
+
     <section class="footer">
 
       <div class="items-icon">
@@ -251,10 +277,9 @@
           <li class="icon"><img src="img/Icon-Angelist.png" alt=""></li>
           <li class="icon"><img src="img/Icon-Twitter.png" alt=""></li>
           <li class="icon"><img src="img/Icon-Medium.png" alt=""></li>
-          
         </ul>
         <p class="email">emailhere@email.com</p>
-        
+
       </div>
     </section>
   </section>
