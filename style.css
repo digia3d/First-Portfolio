@@ -65,6 +65,19 @@ h2 {
   font-size: 18px;
   text-decoration: none;
   color: #fff;
+  animation-duration: 2.5s;
+  animation-name: spin;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0); 
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .button {
