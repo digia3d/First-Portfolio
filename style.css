@@ -646,11 +646,27 @@ textarea {
   }
 
   .element {
-    font-family: 'Roboto', sans-serif;
+    width: 47px;
+    height: 32px;
+    font-family: 'Roboto'sans-serif;
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
-    font-weight: 400;
     line-height: 32px;
     text-align: center;
+    color: #b3bac5;
+  }
+
+  .two {
+    width: 47px;
+    height: 32px;
+    font-family: 'Roboto'sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #b3bac5;
   }
 
   .language {
@@ -704,6 +720,17 @@ textarea {
     flex-direction: row;
     width: 1005px;
     height: 448px;
+  }
+
+  .dash {
+    position: absolute;
+    width: 108px;
+    height: 402px;
+    left: 934.28px;
+    top: 2480px;
+    background: #edecff;
+    filter: blur(50px);
+    transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
   }
 
   #multi {
@@ -777,6 +804,27 @@ textarea {
     display: flex;
     align-items: flex-end;
     padding-top: 34px;
+  }
+
+  #name {
+    height: 48px;
+    width: 50%;
+    left: 0;
+    top: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  #last-name {
+    height: 48px;
+    width: 49%;
+    left: 353px;
+    top: 0;
+    border-radius: 0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
   }
 }
 
