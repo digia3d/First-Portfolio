@@ -60,6 +60,10 @@ body {
   align-items: center;
 }
 
+.hamburger {
+  margin-top: 23.58px;
+}
+
 .links {
   display: none;
   flex-direction: row;
@@ -124,6 +128,19 @@ h2 {
   font-size: 18px;
   text-decoration: none;
   color: #fff;
+  animation-duration: 2.5s;
+  animation-name: spin;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .button {
@@ -420,6 +437,11 @@ h4 {
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.img-placeholder:hover {
+  transform: scale(1.1);
 }
 
 h3 {
@@ -489,6 +511,16 @@ h3 {
   border-right: 1px solid #555;
   padding-top: 10px;
   justify-items: center;
+}
+
+.picture {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: -106px;
+  top: 0;
+  background: #edecff;
+  filter: blur(50px);
 }
 
 .block {
@@ -580,6 +612,7 @@ input {
   height: 48px;
   width: 100%;
   margin: 24px 0;
+  transition: 0.3s ease-in-out;
 }
 
 textarea {
@@ -587,11 +620,35 @@ textarea {
   width: 100%;
   margin-top: 24px;
   padding-top: 13px;
+  transition: 0.3s ease-in-out;
+}
+
+input:hover,
+textarea:hover {
+  transform: translate(10px);
+}
+
+.dash {
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
 }
 
 @media only screen and (min-width: 768px) {
   .picture {
     display: none;
+  }
+
+  .social {
+    gap: 10px;
+    margin-left: 151px;
+  }
+
+  .title {
+    margin-left: 142px;
+  }
+
+  .subtitle {
+    width: auto;
+    margin-left: 142px;
   }
 
   .ellipse {
@@ -628,6 +685,7 @@ textarea {
 
   .first {
     border-bottom: #555 solid 1px;
+    margin-left: 142px;
   }
 
   .supporting-text {
@@ -642,7 +700,7 @@ textarea {
     flex-grow: 0;
     border-bottom: #555 solid 1px;
     top: 220px;
-    margin-left: -121px;
+    margin-left: 23px;
   }
 
   .element {
@@ -655,6 +713,7 @@ textarea {
     line-height: 32px;
     text-align: center;
     color: #b3bac5;
+    padding-left: 48px;
   }
 
   .two {
@@ -686,40 +745,58 @@ textarea {
   }
 
   .skills {
-    margin-right: 497px;
-    gap: 16;
+    margin-left: 33px;
+    margin-top: -6px;
+  }
+
+  ul {
+    gap: 12px;
   }
 
   .items {
     flex-direction: row;
     width: 900px;
     height: 40px;
-    gap: 300px;
+    gap: 250px;
   }
 
   .works {
-    padding: 0;
     grid-template-columns: 1005px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0;
+    gap: 88px;
+    width: 1156px;
+    left: 142px;
+    top: 1193px;
   }
 
   .title-work {
     flex-direction: row;
+    margin-left: 142px;
+    margin-top: 124px;
   }
 
   #works {
     font-weight: 700;
     font-size: 64px;
     line-height: 114px;
+    margin-left: -421px;
   }
 
   .articles {
     padding-top: 96px;
   }
 
+  .contact-page {
+    margin-left: 378px;
+  }
+
   .featured-img {
     flex-direction: row;
-    width: 1005px;
     height: 448px;
+    margin-left: 142px;
   }
 
   .dash {
@@ -730,7 +807,6 @@ textarea {
     top: 2480px;
     background: #edecff;
     filter: blur(50px);
-    transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
   }
 
   #multi {
@@ -742,7 +818,10 @@ textarea {
   }
 
   .img-placeholder {
-    width: 500px;
+    background:
+      linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255)),
+      url(image_processing20200716-21735-f07s4k.png);
+    width: 684px;
     height: 448px;
   }
 
@@ -839,6 +918,7 @@ textarea {
 
   .logo {
     margin-left: 24px;
+    margin-top: 60px;
   }
 
   .frame46 {
