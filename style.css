@@ -383,6 +383,11 @@ ul {
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.img-placeholder:hover {
+  transform: scale(1.1);
 }
 
 h3 {
@@ -533,12 +538,19 @@ input {
   height: 48px;
   width: 100%;
   margin: 24px 0;
+  transition: 0.3s ease-in-out;
 }
 
 textarea {
   height: 148px;
   width: 100%;
   margin-top: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+input:hover,
+textarea:hover {
+  transform: translate(10px);
 }
 
 form button {
