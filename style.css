@@ -65,6 +65,19 @@ h2 {
   font-size: 18px;
   text-decoration: none;
   color: #fff;
+  animation-duration: 2.5s;
+  animation-name: spin;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .button {
@@ -370,6 +383,11 @@ ul {
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.img-placeholder:hover {
+  transform: scale(1.1);
 }
 
 h3 {
@@ -407,7 +425,7 @@ h3 {
   gap: 8px;
 }
 
-.grid-container > ul {
+.grid-container ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -520,12 +538,19 @@ input {
   height: 48px;
   width: 100%;
   margin: 24px 0;
+  transition: 0.3s ease-in-out;
 }
 
 textarea {
   height: 148px;
   width: 100%;
   margin-top: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+input:hover,
+textarea:hover {
+  transform: translate(10px);
 }
 
 form button {
