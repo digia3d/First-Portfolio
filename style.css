@@ -839,13 +839,15 @@ textarea:hover {
 
   .social-icon {
     align-items: center;
-    padding-top: 0;
+    padding-top: 15px;
     justify-content: center;
+    margin-top: 224px;
   }
 
   .items-icon {
     display: flex;
     justify-content: space-around;
+    padding-left: 67px;
   }
 
   .footer {
@@ -882,7 +884,8 @@ textarea:hover {
     height: 29px;
     display: flex;
     align-items: flex-end;
-    padding-top: 34px;
+    padding-top: 37px;
+    margin-top: 226px;
   }
 
   #name {
