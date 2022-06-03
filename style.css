@@ -71,8 +71,8 @@ h2 {
 }
 
 @keyframes spin {
-  from{
-    transform: rotate(0); 
+  from {
+    transform: rotate(0);
   }
 
   to {
@@ -425,7 +425,7 @@ h3 {
   gap: 8px;
 }
 
-.grid-container > ul {
+.grid-container ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
