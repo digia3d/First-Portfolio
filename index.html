@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
     rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/1bb5d15b47.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
   <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
@@ -28,15 +28,46 @@
           <a id="logo" href="#">Aleksandra Ujvari</a>
         </div>
       </div>
+
+      <ul class="links">
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+
+        <li>
+          <button class="mail"><img src="img/Desktop/Union.png" alt=""></button>
+        </li>
+
+      </ul>
+
       <div class="button">
-        <div>
-          <img src="img/Union.png" alt="hamburger icon">
-        </div>
+
+        <img class="hamburger" src="img/Union.png" alt="hamburger icon">
+
       </div>
     </nav>
   </header>
 
   <section class="headline">
+
+    <div>
+      <img class="picture" src="img/Desktop/Ellipse-18.svg" alt="circles">
+    </div>
+    <div>
+      <img class="circle" src="img/Desktop/circle-2-header@2x.png" alt="circles">
+    </div>
+    <div>
+      <img class="moon" src="img/Desktop/circle-2-header@2x.png" alt="circles">
+    </div>
+
+
+
     <div class="title">
       <h1>Aleksandra Ujvari</h1>
     </div>
@@ -44,10 +75,15 @@
       <h5>Software Developer</h5>
     </div>
     <article>
-      <p>
-        I can help you build a product , feature or website Look through some of my work and experience! If you like
-        what you see and have a project you need coded, do not hestiate to contact me.
-      </p>
+      <div>
+        <img class="ellipse" src="img/Desktop/Ellipse-19.svg" alt="circles">
+      </div>
+      <div>
+        <p class="first">
+          I can help you build a product , feature or website Look through some of my work and experience! If you like
+          what you see and have a project you need coded, do not hestiate to contact me.
+        </p>
+      </div>
     </article>
 
     <div class="devider">
@@ -81,6 +117,7 @@
             </ul>
           </div>
         </div>
+
       </article>
       <div class="skills">
         <div class="title-skills">
@@ -94,13 +131,15 @@
           <li>Terminal</li>
         </ul>
       </div>
-    </section>
 
-    <div class="devider">
-      <img src="img/Vector-4.svg" alt="devider">
-    </div>
+    </section>
+    
 
     <div class="items">
+      <div>
+        <a class="element" href="#">Work <i class="fa-solid fa-arrow-down"></i></a>
+        
+      </div>
       <ul class="social">
         <li class="icon"><img src="img/Icon-GitHub.png" alt=""></li>
         <li class="icon"><img src="img/Icon-Linkedin.png" alt=""></li>
@@ -108,22 +147,19 @@
         <li class="icon"><img src="img/Icon-Twitter.png" alt=""></li>
         <li class="icon"><img src="img/Icon-Medium.png" alt=""></li>
       </ul>
-      <div class="element">
-        <img src="img/Element-Right.png" alt="work">
+      <div>
+        <a class="element two" href="#"><i class="fa-solid fa-arrow-down"></i> Work</a>
       </div>
     </div>
   </section>
 
   <section class="works">
     <div class="title-work">
-      <h1 id="works">MY RECENT WORK</h1>
-    </div>
-    <div class="devider">
-      <img class="vector-4" src="img/Vector-4.svg" alt="devider">
+      <h1 id="works">My recent work</h1>
     </div>
     <div class="articles">
       <article class="stories">
-        <div class="featured-img">
+        <div class="featured-img" id="multi">
           <div class="img-placeholder">
             <a href="#"><img src="img/work/Img-Placeholder.png" alt=""></a>
           </div>
@@ -150,6 +186,9 @@
           </div>
           <div class="block">
             <h3>Multi-Post Stories</h3>
+            <div>
+              <img class="dash" src="img/Desktop/Ellipse-20.svg" alt="circles">
+            </div>
             <p class="description">
               A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
@@ -165,7 +204,7 @@
         </div>
       </article>
       <article class="stories">
-        <div class="featured-img">
+        <div class="featured-img" id="multi-post">
           <div class="img-placeholder">
             <a href="#"><img src="img/work/Img-Placeholder.png" alt=""></a>
           </div>
@@ -212,7 +251,7 @@
   <section class="contact-page">
     <article class="contact">
       <h3 class="h3">
-        CONTACT US
+        Let’s chat!
       </h3>
       <p>
         If you have an application you are interested in developing, a feature that you need built or a project that
@@ -222,21 +261,25 @@
     <article class="form">
       <form action="https://formspree.io/f/mnqwwlrz" method="post">
         <label for="name">
-          <input type="text" name="text" id="name" placeholder="Text Input" maxlength="30" required>
+          <input type="text" name="text" id="name" placeholder="  Aleksandra  "  maxlength="30">
+          
+        </label>
+        <label for="last-name">
+          <input type="text" name="text" id="last-name" placeholder="  Last Name  " maxlength="30">
         </label>
         <label for="email">
-          <input type="email" name="email" id="email" value="email" placeholder="jeremy@gmail.com" required>
+          <input type="email" name="email" id="email" placeholder="  ujvari65@gmail.com" required>
         </label>
         <label for="msg">
-          <textarea name="user_massage" id="msg" cols="30" rows="10" maxlength="500" required>Enter text here</textarea>
+          <textarea name="mesage" id="msg" cols="30" rows="10" maxlength="500" placeholder="  Enter text here"></textarea>
         </label>
-        
-          <button type="submit">See Project</button>
-        
+
+        <button type="submit" id="button-footer">Send</button>
+
       </form>
 
     </article>
-    
+
     <section class="footer">
 
       <div class="items-icon">
@@ -246,10 +289,9 @@
           <li class="icon"><img src="img/Icon-Angelist.png" alt=""></li>
           <li class="icon"><img src="img/Icon-Twitter.png" alt=""></li>
           <li class="icon"><img src="img/Icon-Medium.png" alt=""></li>
-          
         </ul>
         <p class="email">emailhere@email.com</p>
-        
+
       </div>
     </section>
   </section>
