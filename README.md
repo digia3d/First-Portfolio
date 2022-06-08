@@ -4,7 +4,7 @@ My personal portfolio
 For this project is used the templates in Figma.
  Set up a linter for HTML and CSS. Added a descriptive README file to the project. Added 3 files :
 .html file that includes a header .
-.css file that includes flexbox.
+.css file that includes flexbox and media query for responsive design.
 .And README file
 
 Built With
@@ -35,7 +35,7 @@ Contributing:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues.
+Feel free to check the issues. 
 
 Show your support
 
