@@ -22,7 +22,7 @@ git clone https://github.com/digia3d/Portfolio
 To access the project directory
 cd Portfolio
 
-Live Demo: 
+Live Demo:(https://digia3d.github.io/Portfolio/)
 
 Authors
 Aleksandra Ujvari
