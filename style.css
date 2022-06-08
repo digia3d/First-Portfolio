@@ -8,8 +8,8 @@
 }
 
 body {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   background-color: #191765;
 }
 
@@ -944,6 +944,11 @@ form button:hover {
   margin-left: 24px;
 }
 
+#name,
+#last-name {
+  display: none;
+}
+
 input {
   height: 48px;
   width: 100%;
@@ -1044,7 +1049,7 @@ div .social-media {
     position: absolute;
     width: 241px;
     height: 40px;
-    right: 44px;
+    right: -244px;
   }
 
   a {
@@ -1069,7 +1074,7 @@ div .social-media {
     width: 40px;
     height: 40px;
     margin-top: 27px;
-    margin-right: 142px;
+    margin-right: -142px;
   }
 
   .placeholder {
@@ -1095,6 +1100,7 @@ div .social-media {
     height: 192px;
     margin-top: 186px;
     justify-content: center;
+    margin-left: 320px;
   }
 
   .headline-title h1 {
@@ -1116,7 +1122,7 @@ div .social-media {
   .supporting-text {
     width: 448px;
     height: 485px;
-    margin-left: 500.5px;
+    margin-left: 480.5px;
     margin-top: 88px;
     justify-content: center;
   }
@@ -1138,6 +1144,7 @@ div .social-media {
     width: 446px;
     height: 224px;
     margin-top: 32px;
+    margin-left: 1px;
   }
 
   .language {
@@ -1207,7 +1214,7 @@ div .social-media {
   .solid-two {
     width: 448px;
     top: 9px;
-    margin-left: 496px;
+    margin-left: 480px;
     margin-top: 50.59px;
   }
 
@@ -1216,7 +1223,7 @@ div .social-media {
     flex-direction: row;
     align-items: center;
     padding: 0;
-    gap: 335px;
+    gap: 260px;
     width: 1023px;
     height: 40px;
     flex: none;
@@ -1239,7 +1246,7 @@ div .social-media {
   }
 
   .social {
-    padding-left: 22px;
+    padding-left: 0;
   }
 
   .element-two {
@@ -1265,6 +1272,7 @@ div .social-media {
     gap: 40px;
     width: auto;
     margin-left: 142px;
+    height: auto;
     padding: 0;
   }
 
@@ -1285,6 +1293,8 @@ div .social-media {
     flex-grow: 0;
     margin-top: 114px;
     margin-bottom: 88px;
+    margin-left: 142px;
+    border-bottom: #555 solid 1px;
   }
 
   #works {
@@ -1303,24 +1313,20 @@ div .social-media {
     height: 114px;
     display: flex;
     align-items: center;
+    margin-left: 142px;
     flex: none;
     order: 0;
     flex-grow: 0;
   }
 
   .devider {
-    height: 0;
-    width: 1156px;
-    left: 0;
-    top: 9px;
-    border-radius: 0;
-    margin-top: 33px;
+    display: none;
   }
 
   .articles {
-    gap: 88px;
     width: auto;
     height: 2056px;
+    margin-top: 88px;
   }
 
   .stories {
@@ -1462,6 +1468,10 @@ div .social-media {
     align-items: flex-end;
     padding-top: 37px;
     margin-top: 226px;
+  }
+
+  #fullName {
+    display: none;
   }
 
   #name {
