@@ -714,7 +714,7 @@ li {
   flex-grow: 0;
 }
 
-.block h3 {
+.block h5 {
   width: 327px;
   height: 105px;
   font-family: 'Roboto', sans-serif;
@@ -897,7 +897,7 @@ form button:hover {
   margin-left: 24px;
 }
 
-.contact h3 {
+.contact h6 {
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -944,7 +944,10 @@ form button:hover {
   margin-left: 24px;
 }
 
-#name,
+#name {
+  display: none;
+}
+
 #last-name {
   display: none;
 }
@@ -1096,7 +1099,7 @@ div .social-media {
 
   .headline {
     gap: 24px;
-    width: auto;
+    width: 100%;
     height: 192px;
     margin-top: 186px;
     justify-content: center;
@@ -1224,7 +1227,7 @@ div .social-media {
     align-items: center;
     padding: 0;
     gap: 260px;
-    width: 1023px;
+    width: 100%;
     height: 40px;
     flex: none;
     order: 2;
@@ -1270,7 +1273,7 @@ div .social-media {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    width: auto;
+    width: 100%;
     margin-left: 142px;
     height: auto;
     padding: 0;
@@ -1324,8 +1327,8 @@ div .social-media {
   }
 
   .articles {
-    width: auto;
-    height: 2056px;
+    width: 100%;
+    height: auto;
     margin-top: 88px;
   }
 
@@ -1333,7 +1336,7 @@ div .social-media {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    width: 1156px;
+    width: auto;
     height: 448px;
   }
 
@@ -1370,13 +1373,13 @@ div .social-media {
     flex-grow: 0;
   }
 
-  h3 {
+  h6 {
     font-weight: 700px;
     font-size: 40px;
     line-height: 52px;
   }
 
-  .contact h3 {
+  .contact h6 {
     width: 684px;
     height: 56px;
     font-weight: 700;
@@ -1428,14 +1431,14 @@ div .social-media {
   }
 
   .footer {
-    width: 1440px;
+    width: 100%;
     left: 0;
     border-radius: 0;
     flex-direction: row;
     height: 72px;
   }
 
-  .h3 {
+  .h6 {
     font-size: 40px;
     font-weight: 700;
     line-height: 24px;
@@ -1470,7 +1473,7 @@ div .social-media {
     margin-top: 226px;
   }
 
-  #fullName {
+  #full-name {
     display: none;
   }
 
