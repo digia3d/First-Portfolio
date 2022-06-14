@@ -15,9 +15,9 @@ body {
 
 .backgraund {
   position: absolute;
-  width: 375px;
-  height: 555px;
-  top: 97px;
+  width: 100%;
+  height: auto;
+  top: 19.2vh;
   background-repeat: no-repeat;
 }
 
@@ -105,6 +105,9 @@ body {
 
 .nav-menu {
   position: fixed;
+  background-image: url(img/mobile-menu/shapes\ mobile\ menu.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
   left: -100%;
   top: 70px;
   flex-direction: column;
