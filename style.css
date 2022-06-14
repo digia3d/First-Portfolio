@@ -124,10 +124,6 @@ body {
   transition: 0.3s;
 }
 
-.nav-item {
-  margin: 16px 0;
-}
-
 .nav-menu.active {
   left: 2px;
   padding-left: 10px;
@@ -138,6 +134,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: top;
+  position: absolute;
 }
 
 .nav-menu.active ul {
@@ -185,13 +182,13 @@ a {
   margin-top: 47px;
 }
 
-.nav-menu.active,
 .nav-item {
   height: 40px;
   padding-left: 24px;
   right: 16px;
   padding-top: 25px;
   padding-bottom: 35px;
+  margin: 16px 0;
 }
 
 .nav-menu.active .span1 {
