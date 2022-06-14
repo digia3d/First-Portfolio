@@ -214,11 +214,12 @@ a {
   align-items: center;
   padding: 0;
   gap: 12px;
-  width: 327px;
+  width: 100%;
   height: 154px;
   margin-left: 24px;
   margin-top: 139px;
   flex: none;
+
   order: 0;
   flex-grow: 0;
 }
@@ -251,7 +252,7 @@ a {
   justify-content: center;
   padding: 0;
   gap: 24px;
-  width: 327px;
+  width: 100%;
   height: 738.15px;
   flex: none;
   order: 1;
@@ -277,7 +278,7 @@ a {
 }
 
 .solid {
-  width: 327px;
+  width: 100%;
   color: #646369;
 }
 
@@ -611,7 +612,7 @@ li {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  width: 200px;
+  width: 100%;
   height: 104px;
   margin-left: 87.5px;
   flex: none;
@@ -775,7 +776,7 @@ li {
     linear-gradient(0deg, #f9f9f9, #f9f9f9),
     url(img/work/Img-Placeholder.png);
   color: #f9f9f9;
-  width: 327px;
+  width: 100%;
   height: 236px;
   flex: none;
   order: 0;
@@ -1473,6 +1474,7 @@ div .social-media {
       url(image_processing20200716-21735-f07s4k.png);
     width: 684px;
     height: 448px;
+    transition: 0.3s ease-in-out;
   }
 
   .dash {
