@@ -911,6 +911,55 @@ li {
   transform: translate(-50%, -50%) scale(1);
 }
 
+#popup-ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 2px;
+  width: 245px;
+  height: 41px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-li1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 59px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-li2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 120px;
+  height: 40px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.popup-li3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 50px;
+  height: 40px;
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+}
+
 .popup-header {
   display: flex;
   flex-direction: row;
