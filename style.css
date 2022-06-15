@@ -890,7 +890,7 @@ li {
   flex-grow: 0;
 }
 
-.modal {
+.popup {
   position: fixed;
   left: 50%;
   right: 0;
@@ -907,11 +907,11 @@ li {
   transition: 200ms ease-in-out;
 }
 
-.modal-active {
+.popup-active {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-header {
+.popup-header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -927,7 +927,7 @@ li {
   flex-grow: 0;
 }
 
-.modal-title {
+.popup-title {
   font-family: 'Roboto', sans-serif;
   font-size: 1.25em;
   font-weight: 500;
@@ -937,7 +937,7 @@ li {
   color: #fff;
 }
 
-.modal-header .close-button {
+.popup-header .close-button {
   cursor: pointer;
   border: none;
   outline: none;
@@ -954,7 +954,7 @@ li {
   flex-grow: 0;
 }
 
-.modal-image {
+.popup-image {
   width: 55.36vh;
   height: 35.9vh;
   top: 21.03vh;
@@ -962,7 +962,7 @@ li {
   margin-left: 4.76vh;
 }
 
-.modal-body {
+.popup-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -982,7 +982,7 @@ li {
   text-align: center;
 }
 
-.modal-buttons {
+.popup-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;

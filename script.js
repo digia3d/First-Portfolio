@@ -10,3 +10,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
+
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
