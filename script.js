@@ -79,14 +79,14 @@ projectDetailsButtons.forEach((btn) => {
   btn.addEventListener('click', (ev) => {
     setPopupData(projects[ev.target.attributes.id.value]);
     document.querySelector('header').classList.add('blur');
-    document.querySelectorAll('section').forEach((item)=>item.classList.add('blur'));
-    popup.classList.remove('d-none');
-    window.scrollTo(0,0);
+    document.querySelectorAll('section').forEach((item) => item.classList.add('blur'));
+    popup.classList.remove(' d-none ');
+    window.scrollTo(0, 0);
   });
 });
 
-closeButtonsIcon.addEventListener('click',()=>{
+closeButtonsIcon.addEventListener('click', () => {
   document.querySelector('header').classList.remove('blur');
-  document.querySelectorAll('section').forEach((item)=>item.classList.remove('blur'));
+  document.querySelectorAll('section').forEach((item) => item.classList.remove('blur'));
   popup.classList.add('d-none');
 });
