@@ -748,7 +748,7 @@ li {
 
 .works {
   display: grid;
-  grid-template-columns: 327px;
+  grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
   align-items: center;
@@ -898,11 +898,14 @@ li {
   bottom: 50%;
   z-index: 10;
   transition: 200ms ease-in-out;
+  height: auto;
+  height: 175.6vh;
+  width: 64.9vh;
 }
 
-.d-none {
+/* .d-none {
   display: none;
-}
+} */
 
 .display {
   display: block;
@@ -917,6 +920,8 @@ li {
   display: flex;
   align-items: center;
   padding: 0;
+  margin-top: 4.86vh;
+  margin-bottom: 4.7vh;
 }
 
 .popup-image {
@@ -926,9 +931,37 @@ li {
 .popup-li {
   display: flex;
   align-items: center;
-  flex: none;
-  flex-grow: 0;
+  justify-content: space-between;
   padding: 1em;
+  height: 7.94vh;
+  order: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  border-left: #555 solid 1px;
+  border-right: #555 solid 1px;
+}
+
+#one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 59px;
+  height: 40px;
+}
+
+#two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 120px;
+  height: 40px;
 }
 
 .popup-container {
@@ -936,6 +969,12 @@ li {
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.16);
   padding: 0.5em 0.5em 2em 0.5em;
+  top: 50%;
+  bottom: 50%;
+  height: 103vh;
+  width: 100%;
+  left: 0;
+  border-radius: 0;
 }
 
 .blur {
@@ -970,22 +1009,31 @@ li {
 .popup-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0;
+  gap: 24px;
+  position: absolute;
+  width: auto;
+  height: 354px;
+  left: 38.5px;
+}
+
+.popup-description {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 400;
   color: #fff;
   line-height: 1.5em;
   letter-spacing: 0;
+  text-align: center;
 }
 
-.popup-buttons {
+.button-details {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   gap: 24px;
+  margin-bottom: 28px;
 }
 
 #hover {
@@ -1326,9 +1374,9 @@ div .social-media {
     display: none;
   }
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  } */
 
   .picture {
     margin-top: 237px;
