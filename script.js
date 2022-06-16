@@ -80,7 +80,7 @@ projectDetailsButtons.forEach((btn) => {
     setPopupData(projects[ev.target.attributes.id.value]);
     document.querySelector('header').classList.add('blur');
     document.querySelectorAll('section').forEach((item) => item.classList.add('blur'));
-    popup.classList.remove(' d-none ');
+    popup.classList.remove('d-none');
     window.scrollTo(0, 0);
   });
 });
@@ -90,3 +90,21 @@ closeButtonsIcon.addEventListener('click', () => {
   document.querySelectorAll('section').forEach((item) => item.classList.remove('blur'));
   popup.classList.add('d-none');
 });
+
+const form = document.getElementById('contact-form');
+const email = form.elements('mail');
+const mesage = 'Please, email must be in lower case';
+
+function validatEmail() {
+  const email = document.getElementById('mail').value;
+
+  const regx = /^[a-z]*@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+
+  if (regx.test(email.toLowerCase())) {
+    // if is correct print out "valid email"
+    mesage('valid email');
+  } else {
+    // else print "invalid email"
+    console.log('invalid email');
+  }
+}
