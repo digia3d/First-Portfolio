@@ -1340,7 +1340,6 @@ div .social-media {
   /* body {
     overflow-x: hidden;
   } */
-
   .picture {
     margin-top: 237px;
     margin-left: 69px;
@@ -1882,4 +1881,19 @@ div .social-media {
   .picture {
     display: none;
   }
+}
+
+.feedback {
+  color: #ff0;
+  text-align: center;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.error {
+  border: 2px solid #dc3545;
+}
+
+.success {
+  border: 2px solid #00c800;
 }
