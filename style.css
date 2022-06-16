@@ -1693,14 +1693,6 @@ div .social-media {
     transition: 0.3s ease-in-out;
   }
 
-  .popup {
-    height: auto;
-  }
-
-  .popup-container {
-    height: 230vh;
-  }
-
   .popup-title {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
