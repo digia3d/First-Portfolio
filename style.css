@@ -834,7 +834,6 @@ li {
 }
 
 .img-placeholder {
-  background: linear-gradient(0deg, #f9f9f9, #f9f9f9), url(img/work/Img-Placeholder.png);
   color: #f9f9f9;
   width: 100%;
   height: 236px;
@@ -845,7 +844,7 @@ li {
 }
 
 .img-placeholder:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .block {
@@ -877,7 +876,7 @@ li {
   flex-grow: 0;
 }
 
-.block p {
+.block > p {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -890,16 +889,185 @@ li {
   flex-grow: 0;
 }
 
+.popup {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  right: 0;
+  bottom: 50%;
+  z-index: 99;
+  transition: 200ms ease-in-out;
+}
+
+.popup-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5em;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+.detailsButton {
+  position: relative;
+  z-index: 100;
+}
+
+#popup-ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.popup-image {
+  width: 100%;
+}
+
+.popup-li {
+  display: flex;
+  align-items: center;
+  flex: none;
+  flex-grow: 0;
+  padding: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  border-left: #555 solid 1px;
+  border-right: #555 solid 1px;
+}
+
+.popup-container {
+  margin: 1em;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 0.5em 1em 2em 0.5em;
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.popup-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 1.5em;
+}
+
+.popup-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.popup-header .close-button {
+  cursor: pointer;
+  font-size: 2.25rem;
+  font-weight: 300;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+}
+
+#hover {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+  width: 108px;
+  height: 48px;
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#enable {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+  width: 124px;
+  height: 48px;
+  background: #7d73fc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  width: 375px;
+  height: auto;
+  left: 0;
+  top: 0;
+  background: rgb(162, 163, 174);
+  transition: 200ms ease-in-out;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+#overlay-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0;
-  gap: 8px;
-  width: 312px;
-  height: 40px;
+  gap: 1.58vh;
+  width: 61.9vh;
+  height: 7.94vh;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 0.94em;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0;
@@ -960,16 +1128,6 @@ li {
   order: 6;
   flex-grow: 0;
 }
-
-/* .picture {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  left: -106px;
-  top: 0;
-  background: #edecff;
-  filter: blur(50px);
-} */
 
 button {
   font-family: 'Roboto', sans-serif;
@@ -1179,9 +1337,9 @@ div .social-media {
     display: none;
   }
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  } */
 
   .picture {
     margin-top: 237px;
@@ -1415,6 +1573,7 @@ div .social-media {
     flex: none;
     order: 2;
     flex-grow: 0;
+    margin-left: 90px;
   }
 
   .left-element {
@@ -1532,6 +1691,36 @@ div .social-media {
     width: 110.8vh;
     height: 448px;
     transition: 0.3s ease-in-out;
+  }
+
+  .popup-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: 0;
+  }
+
+  .popup-body {
+    width: 133.8vh;
+    margin-top: 7.8vh;
+    margin-left: 36.2vh;
+  }
+
+  .popup-description {
+    line-height: 1.9em;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .popup-buttons {
+    flex-direction: row;
+    gap: 75px;
+  }
+
+  #popup-ul {
+    margin-top: 10.96vh;
+    margin-bottom: 9.4vh;
   }
 
   .dash {
