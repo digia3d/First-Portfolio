@@ -91,7 +91,6 @@ closeButtonsIcon.addEventListener('click', () => {
   popup.classList.add('d-none');
 });
 
-
 const form = document.getElementById('contact-form');
 const email = form.elements.mail;
 const fullName = form.elements.name;
@@ -141,4 +140,3 @@ document.getElementById('button-footer').addEventListener('click', (ev) => {
   const message = 'Please, email must be in lower case';
   if (validatEmail(email, message)) form.submit();
 });
-
