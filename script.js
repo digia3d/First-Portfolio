@@ -91,6 +91,7 @@ closeButtonsIcon.addEventListener('click', () => {
   popup.classList.add('d-none');
 });
 
+
 const form = document.getElementById('contact-form');
 const email = form.elements.mail;
 const fullName = form.elements.name;
@@ -120,3 +121,24 @@ if (!localStorage.getItem('contactName')) {
 fullName.onchange = populateStorage;
 email.onchange = populateStorage;
 msg.onchange = populateStorage;
+
+function validatEmail(input, message) {
+  const regx = /^[a-z]*@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  if (regx.test(input.value)) {
+    input.className = 'success';
+    document.querySelector('.feedback').innerHTML = '';
+    return true;
+  }
+  input.className = 'error';
+  document.querySelector('.feedback').innerHTML = message;
+  return false;
+}
+
+document.getElementById('button-footer').addEventListener('click', (ev) => {
+  ev.preventDefault();
+  const form = document.getElementById('contact-form');
+  const email = document.getElementById('mail');
+  const message = 'Please, email must be in lower case';
+  if (validatEmail(email, message)) form.submit();
+});
+
