@@ -91,6 +91,36 @@ closeButtonsIcon.addEventListener('click', () => {
   popup.classList.add('d-none');
 });
 
+const form = document.getElementById('contact-form');
+const email = form.elements.mail;
+const fullName = form.elements.name;
+const msg = form.elements.message;
+
+function setFormData() {
+  const currentContactName = localStorage.getItem('contactName');
+  const currentContactEmail = localStorage.getItem('contactEmailAddress');
+  const currentContactMessage = localStorage.getItem('contactMessage');
+  fullName.value = currentContactName;
+  email.value = currentContactEmail;
+  msg.value = currentContactMessage;
+}
+function populateStorage() {
+  localStorage.setItem('contactName', fullName.value);
+  localStorage.setItem('contactEmailAddress', email.value);
+  localStorage.setItem('contactMessage', msg.value);
+  setFormData();
+}
+
+if (!localStorage.getItem('contactName')) {
+  populateStorage();
+} else {
+  setFormData();
+}
+
+fullName.onchange = populateStorage;
+email.onchange = populateStorage;
+msg.onchange = populateStorage;
+
 function validatEmail(input, message) {
   const regx = /^[a-z]*@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
   if (regx.test(input.value)) {
