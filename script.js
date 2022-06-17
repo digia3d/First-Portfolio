@@ -92,36 +92,31 @@ closeButtonsIcon.addEventListener('click', () => {
 });
 
 const form = document.getElementById('contact-form');
-const email = form.element('email');
-const fullName = form.element('fullName');
-const message = form.element('msg');
+const email = form.elements.mail;
+const fullName = form.elements.name;
+const msg = form.elements.message;
 
-function setData() {
-  localStorage.setItem('form', contactForm.value);
-  localStorage.setItem('email', contactEmail.value);
-  localStorage.setItem('fullName', contactFullName.value);
-  localStorage.setItem('message', contactMessage.value);
+function setFormData() {
+  const currentContactName = localStorage.getItem('contactName');
+  const currentContactEmail = localStorage.getItem('contactEmailAddress');
+  const currentContactMessage = localStorage.getItem('contactMessage');
+  fullName.value = currentContactName;
+  email.value = currentContactEmail;
+  msg.value = currentContactMessage;
 }
-
-function getData() {
-  localStorage.getItem('contact-form');
-  localStorage.getItem('email');
-  localStorage.getItem('fullName');
-  localStorage.getItem('message');
-}
-
 function populateStorage() {
-  localStorage.setItem('form', contactForm.value);
-  localStorage.setItem('email', contactEmail.value);
-  localStorage.setItem('message', contactMessage.value);
+  localStorage.setItem('contactName', fullName.value);
+  localStorage.setItem('contactEmailAddress', email.value);
+  localStorage.setItem('contactMessage', msg.value);
+  setFormData();
 }
 
-if (!localStorage.getItem('fullName')) {
+if (!localStorage.getItem('contactName')) {
   populateStorage();
 } else {
-  setData();
+  setFormData();
 }
 
-Name.onchange = populateStorage;
+fullName.onchange = populateStorage;
 email.onchange = populateStorage;
-message.onchange = populateStorage;
+msg.onchange = populateStorage;
