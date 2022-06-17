@@ -90,3 +90,38 @@ closeButtonsIcon.addEventListener('click', () => {
   document.querySelectorAll('section').forEach((item) => item.classList.remove('blur'));
   popup.classList.add('d-none');
 });
+
+const form = document.getElementById('contact-form');
+const email = form.element('email');
+const fullName = form.element('fullName');
+const message = form.element('msg');
+
+function setData() {
+  localStorage.setItem('form', contactForm.value);
+  localStorage.setItem('email', contactEmail.value);
+  localStorage.setItem('fullName', contactFullName.value);
+  localStorage.setItem('message', contactMessage.value);
+}
+
+function getData() {
+  localStorage.getItem('contact-form');
+  localStorage.getItem('email');
+  localStorage.getItem('fullName');
+  localStorage.getItem('message');
+}
+
+function populateStorage() {
+  localStorage.setItem('form', contactForm.value);
+  localStorage.setItem('email', contactEmail.value);
+  localStorage.setItem('message', contactMessage.value);
+}
+
+if (!localStorage.getItem('fullName')) {
+  populateStorage();
+} else {
+  setData();
+}
+
+Name.onchange = populateStorage;
+email.onchange = populateStorage;
+message.onchange = populateStorage;
