@@ -300,7 +300,7 @@
             <form action="https://formspree.io/f/xvolyjvg" method="post" id="contact-form">
 
                 <label for="full-name">
-                    <input type="text" name="text" id="full-name" placeholder=" Full name " maxlength="30">
+                    <input type="text" name="text" id="full-name" placeholder=" Full name " maxlength="30" required>
                 </label>
 
                 <label for="mail">
@@ -309,7 +309,7 @@
 
                 <label for="msg">
                     <textarea name="mesage" id="msg" cols="30" rows="10" maxlength="500"
-                        placeholder="  Enter text here"></textarea>
+                        placeholder="  Enter text here" required></textarea>
                 </label>
                 <div class="feedback"></div>
                 <button onclick="validate('lowerCase')" type="submit" id="button-footer">Send</button>
