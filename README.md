@@ -1,46 +1,59 @@
-# Portfolio
-My personal portfolio
+
+# Alex's portfolio
 
 For this project is used the templates in Figma.
- Set up a linter for HTML and CSS. Added a descriptive README file to the project. Added 3 files :
+ Set up a linter for HTML, CSS and JS. Added a descriptive README file to the project. Added 4 files :
 .html file that includes a header .
 .css file that includes flexbox and media query for responsive design.
-.And README file
+. JS script file that includes code for popup widows and for validation of contact form.
+.And README file.
 
-Built With
 
-HTML5, CSS3
-github flow
-Git action
+## Built With
 
-Getting started
+- Major languages:HTML5, CSS3, JavaScript. 
+- Frameworks: bootstrap, github flow.
+- Technologies used: Git action.
 
-Setup:
+## Live Demo (if available)
 
-Download the Zip file or Clone the repo with:
+[Live Demo Link](https://github.com/digia3d/Portfolio/settings/pages)
+
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Setup : Download the Zip file or Clone the repo with:
 git clone https://github.com/digia3d/Portfolio
 To access the project directory
-cd Portfolio
+cd Portfolio.
+## Authors
 
-Live Demo:(https://digia3d.github.io/Portfolio/)
-
-Authors
+👤 **Author1**
 Aleksandra Ujvari
 
-GitHub: https://github.com/githubhandle
-Twitter:https://twitter.com/twitterhandle
-LinkedIn: https://linkedin.com/in/linkedinhandle
+- GitHub: [@githubhandle](https://github.com/digia3d)
+- Twitter: [@twitterhandle](https://twitter.com/ujvari65)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aleksandra-ujvari-85235a210/)
 
-Contributing:
+## 🤝 Contributing : 
+-Ushindi Bienvenu
+
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues. 
+Feel free to check the [issues page](https://github.com/digia3d/Portfolio/issues).
 
-Show your support
+## Show your support
 
-Give a star if you like this project!
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+ - Thanks to Ushindi Bienvenu for help with this project.
 
 
+## 📝 License
 
-
+This project is [MIT](./MIT.md) licensed.
