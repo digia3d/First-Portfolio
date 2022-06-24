@@ -138,9 +138,11 @@ header {
 .portfolio,
 .about,
 .chat {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-left: 4.7vh;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 a {
@@ -157,7 +159,7 @@ a {
 
 .nav-menu.active .nav-link {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 500;
   letter-spacing: 0;
   text-align: left;
@@ -171,18 +173,6 @@ a {
   padding-top: 5.6vh;
   padding-bottom: 7.85vh;
   margin: 3.59vh 0;
-}
-
-.nav-menu.active .span1 {
-  gap: 28vh;
-}
-
-.nav-menu.active .span2 {
-  gap: 33vh;
-}
-
-.nav-menu.active .span3 {
-  gap: 30vh;
 }
 
 .mail {
@@ -237,8 +227,8 @@ a {
 .button {
   display: flex;
   align-items: flex-start;
-  margin-top: 35px;
-  margin-right: 24px;
+  margin-top: 6.94vh;
+  margin-right: 4.76vh;
   border-radius: 8px;
   background: transparent;
 }
@@ -460,7 +450,7 @@ li {
 
 .frame13 {
   width: 14.6vh;
-  height: 30.97px;
+  height: 6.14vh;
 }
 
 .frame14 {
@@ -519,18 +509,17 @@ li {
   align-items: flex-start;
   padding: 0 8px;
   gap: 5.33px;
-  width: 125px;
-  height: 181.33px;
+  width: 24.8vh;
+  height: 35.98vh;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 0.94em;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0;
   text-align: left;
   color: #f5f5ff;
   flex: none;
   order: 1;
-  flex-grow: 0;
 }
 
 .frame41,
@@ -665,12 +654,12 @@ li {
 }
 
 #works {
-  height: 104px;
+  height: 20.63vh;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 2em;
-  line-height: 52px;
+  line-height: 3.25em;
   display: flex;
   align-items: center;
   color: rgb(148, 144, 255);
@@ -743,7 +732,7 @@ li {
 }
 
 .block h5 {
-  height: 105px;
+  height: 20.83vh;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1102,15 +1091,15 @@ button {
 }
 
 input {
-  height: 48px;
-  margin: 24px 0;
+  height: 9.5vh;
+  margin: 4.8vh 0;
   width: 100%;
   transition: 0.3s ease-in-out;
 }
 
 textarea {
-  height: 148px;
-  margin-top: 24px;
+  height: 29.4vh;
+  margin-top: 4.76vh;
   padding-top: 13px;
   width: 100%;
   transition: 0.3s ease-in-out;
@@ -1168,7 +1157,7 @@ form button:hover {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  height: 72px;
+  height: 14.3vh;
   left: 0;
   border-top: #555 solid 1px;
 }
@@ -1179,21 +1168,21 @@ div .social-media {
   align-items: center;
   padding: 0;
   position: absolute;
-  width: 200px;
-  height: 40px;
-  left: 88px;
-  margin-top: 16px;
+  width: 39.7vh;
+  height: 7.94vh;
+  left: 17.5vh;
+  margin-top: 3.17vh;
 }
 
 .description {
-  width: 221px;
-  height: 29px;
+  width: 43.85vh;
+  height: 5.75vh;
   left: 76px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25em;
+  line-height: 1.75em;
   text-align: center;
   color: rgb(235, 235, 255);
 }
@@ -1208,8 +1197,8 @@ div .social-media {
   }
 
   .picture {
-    margin-top: 237px;
-    margin-left: 69px;
+    margin-top: 47.02vh;
+    margin-left: 13.7vh;
     position: absolute;
   }
 
@@ -1217,8 +1206,7 @@ div .social-media {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 44px;
-    height: 48px;
+    height: 14.09vh;
   }
 
   .nav-menu {
@@ -1232,7 +1220,7 @@ div .social-media {
     gap: 8px;
     width: 241px;
     height: 40px;
-    left: 897px;
+    margin-left: 37.96vh;
   }
 
   a {
