@@ -38,21 +38,34 @@
                 <!--</div>-->
             </div>
 
-            <div class="nav-menu">
-                <ul class="nav-ul">
+            <!--<div class="nav-menu">-->
+            <ul class="nav-ul nav-menu">
+                <li class="portfolio">
+                    <a href="#" class="nav-link span1">Portfolio</a>
+
+                </li>
+                <li class="about">
+                    <a href="#about" class="nav-link span2">About</a>
+                </li>
+                <li class="chat">
+                    <a href="#contact" class="nav-link span3">Contact</a>
+
+                </li>
+            </ul>
+            <!-- </div>-->
+
+            <div id="nav-menu">
+                <ul id="nav-ul">
                     <li class="portfolio">
-                        <a href="#" class="nav-link span1">Portfolio</a><a href="#"><i
-                                class="fa-solid fa-angle-right"></i></a>
+                        <a href="#" class="nav-link span1">Portfolio</a>
 
                     </li>
                     <li class="about">
-                        <a href="#about" class="nav-link span2">About</a><a href="#about"><i
-                                class="fa-solid fa-angle-right"></i></a>
+                        <a href="#about" class="nav-link span2">About</a>
 
                     </li>
                     <li class="chat">
-                        <a href="#contact" class="nav-link span3">Contact</a><a href="#contact"><i
-                                class="fa-solid fa-angle-right"></i></a>
+                        <a href="#contact" class="nav-link span3">Contact</a>
 
                     </li>
                 </ul>
@@ -304,21 +317,25 @@
             <form action="https://formspree.io/f/xvolyjvg" method="post" id="contact-form">
 
                 <label for="full-name">
+
                     <input type="text" name="fullName" id="fullName" placeholder=" Full name " maxlength="30">
+
                 </label>
 
-                <label for="email">
-                    <input type="email" name="email" id="email" placeholder="  ujvari65@gmail.com" required>
+                <label for="mail">
+                    <input type="email" name="email" id="mail" placeholder="  ujvari65@gmail.com" required>
                 </label>
 
                 <label for="msg">
-                    <textarea name="mesage" id="msg" cols="30" rows="10" maxlength="500"
-                        placeholder="  Enter text here"></textarea>
+                    <textarea name="mesage" id="msg" cols="30" rows="10" maxlength="500" placeholder="  Enter text here"
+                        required></textarea>
                 </label>
                 <label for="button">
                     <button type="submit" onclick="test" id="button-footer">Send</button>
                 </label>
 
+                <div class="feedback"></div>
+                <button onclick="validate('lowerCase')" type="submit" id="button-footer">Send</button>
             </form>
         </article>
 
