@@ -236,6 +236,10 @@ a {
   background: transparent;
 }
 
+.picture {
+  display: none;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -250,22 +254,17 @@ a {
   flex-grow: 0;
 }
 
-.headline-title {
-  gap: 2.35vh;
-}
-
-.headline-title h1 {
+.h1 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3em;
   text-align: center;
   letter-spacing: 0.023em;
-  line-height: 4.5em;
-  color: #7d73fc;
+  color: rgb(125, 115, 252);
 }
 
-.headline .subtitle h2 {
+.h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   font-weight: 500;
@@ -343,11 +342,9 @@ a {
   padding: 1.04vh 1.56vh;
   gap: 1.56vh;
   width: 27.6vh;
-  height: 6vh;
   font-family: 'Roboto', sans-serif;
   font-size: 0.75em;
   font-weight: 500;
-  line-height: 1.5em;
   letter-spacing: 0.03em;
   text-align: left;
   color: #9490ff;
@@ -382,14 +379,12 @@ a {
 
 .frame24 {
   width: 19.2vh;
-  height: 4.68vh;
   order: 1;
 }
 
 .frame25,
 .frame26 {
   width: 13.51vh;
-  height: 4.69vh;
   order: 2;
 }
 
@@ -414,11 +409,9 @@ li {
   padding: 1.05vh 1.59vh;
   gap: 1.59vh;
   width: 30.95vh;
-  height: 6vh;
   font-family: 'Roboto', sans-serif;
   font-size: 0.75em;
   font-weight: 500;
-  line-height: 1.5em;
   letter-spacing: 0.03em;
   color: rgb(148, 144, 255);
   text-align: left;
@@ -431,11 +424,10 @@ li {
   padding: 0 1.53vh;
   gap: 1.03vh;
   width: 23.8vh;
-  height: 29.8vh;
   font-family: 'Roboto', sans-serif;
   font-size: 0.94em;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.7em;
   letter-spacing: 0;
   text-align: left;
   color: rgb(245, 245, 255);
@@ -452,28 +444,23 @@ li {
 }
 
 .frame13 {
-  width: 14.6vh;
-  height: 6.14vh;
+  width: 15.6vh;
 }
 
 .frame14 {
   width: 20.74vh;
-  height: 6.14vh;
 }
 
 .frame15 {
   width: 14.6vh;
-  height: 6.14vh;
 }
 
 .frame16 {
   width: 14.6vh;
-  height: 6.14vh;
 }
 
 .frame17 {
   width: 14.6vh;
-  height: 6.14vh;
 }
 
 .skills {
@@ -483,7 +470,6 @@ li {
   padding: 0;
   gap: 3.17vh;
   width: 24.2vh;
-  height: 44.9vh;
   order: 1;
 }
 
@@ -494,7 +480,6 @@ li {
   padding: 1.06vh 1.59vh;
   gap: 1.59vh;
   width: 24.2vh;
-  height: 5.33vh;
   font-family: 'Roboto', sans-serif;
   color: rgb(148, 144, 255);
   font-size: 0.75em;
@@ -513,11 +498,9 @@ li {
   padding: 0 8px;
   gap: 5.33px;
   width: 24.8vh;
-  height: 35.98vh;
   font-family: 'Roboto', sans-serif;
   font-size: 0.94em;
   font-weight: 400;
-  line-height: 1.5em;
   letter-spacing: 0;
   text-align: left;
   color: #f5f5ff;
@@ -534,7 +517,6 @@ li {
   flex-direction: row;
   align-items: flex-start;
   width: 18.08vh;
-  height: 6.35vh;
 }
 
 #left-element {
@@ -1139,8 +1121,8 @@ form button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 245px;
-  height: 40px;
+  width: 48.61vh;
+  height: 7.93vh;
   gap: 2.95vh;
   justify-content: center;
 }
@@ -1150,7 +1132,7 @@ form button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 1.6vh;
   height: 14.3vh;
   left: 0;
   border-top: #555 solid 1px;
@@ -1213,17 +1195,17 @@ form button:hover {
     justify-content: space-between;
     padding: 0;
     gap: 8px;
-    margin-right: 192px;
+    margin-right: 38.09vh;
   }
 
   #nav-ul {
     display: flex;
     flex-direction: row;
-    height: 40px;
-    width: 241px;
-    margin-top: 16px;
+    height: 7.94vh;
+    width: 47.82vh;
+    margin-top: 3.17vh;
     border-radius: 0;
-    margin-left: 600px;
+    margin-left: 119.04vh;
     align-items: center;
   }
 
@@ -1233,8 +1215,8 @@ form button:hover {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.94em;
+    line-height: 1.25em;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1246,8 +1228,8 @@ form button:hover {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.94em;
+    line-height: 1.25em;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1271,136 +1253,81 @@ form button:hover {
     background: transparent;
     flex-direction: row;
     align-items: flex-start;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-    margin-top: 27px;
-    margin-right: 142px;
+    padding: 1.59vh;
+    width: 7.94vh;
+    height: 7.94vh;
+    margin-top: 5.36vh;
+    margin-right: 28.17vh;
   }
 
   .placeholder {
-    margin-left: 152px;
-    margin-top: 16px;
+    margin-left: 30.16vh;
+    margin-top: 3.17vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 1.98vh;
+  }
+
+  .top-circles {
+    margin-top: 45vh;
   }
 
   .headline {
-    gap: 24px;
-    height: 192px;
-    margin-top: 186px;
+    gap: 4.76vh;
+    height: 38.09vh;
+    margin-top: 36.9vh;
     justify-content: center;
     margin-left: 16%;
   }
 
-  .headline-title h1 {
-    font-size: 90px;
-    line-height: 105px;
+  .headline-title {
+    font-size: 5.625em;
     justify-items: center;
+    color: rgb(147, 144, 255);
+    margin-left: -27.79vh;
   }
 
-  .headline-subtitle h2 {
-    height: 72px;
+  .headline-subtitle {
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
+    font-weight: 500;
     font-size: 40px;
-    line-height: 47px;
-    flex: none;
+    text-align: center;
+    color: rgb(223, 225, 230);
     order: 1;
-    flex-grow: 0;
+    margin-left: -22vh;
   }
 
   .supporting-text {
-    width: 448px;
-    height: 485px;
-    margin-left: 480.5px;
-    margin-top: 88px;
+    width: 88.88vh;
+    margin-left: 32%;
+    margin-top: 17.22vh;
     justify-content: center;
   }
 
   .first {
-    width: 447px;
-    height: 155px;
-    line-height: 32px;
-    margin-top: 88px;
+    width: auto;
+    margin-top: 17.46vh;
   }
 
   .solid {
-    width: 448px;
-    top: 9px;
+    width: 88.88vh;
+    top: 1.78vh;
   }
 
   .frame38 {
+    display: flex;
     flex-direction: row;
-    width: 446px;
-    height: 224px;
-    margin-top: 32px;
-    margin-left: 1px;
-  }
-
-  .language {
-    width: 123px;
-    height: 167.67px;
-  }
-
-  .title-lang {
-    width: 107px;
-    height: 26.67px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 29px;
-  }
-
-  .frame36 {
     align-items: flex-start;
-    height: 129px;
-    font-size: 13px;
-    line-height: 25px;
+    justify-content: space-between;
+    width: 88.49vh;
+    margin-top: 6.35vh;
+    margin-left: 0.2vh;
   }
 
-  .frame23 {
-    width: 68.08px;
-    height: 28.67px;
-  }
-
-  .frameworks {
-    width: 153px;
-  }
-
-  .title-frame {
-    width: 153px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0;
-  }
-
-  .frame29 {
-    font-size: 14px;
-    line-height: 28px;
-  }
-
-  .skills {
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-  }
-
-  .title-skills {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0;
-  }
-
-  .frame28 {
-    font-size: 14.66px;
-    line-height: 28px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  .frame46 {
+    gap: 8vh;
   }
 
   .solid-two {
