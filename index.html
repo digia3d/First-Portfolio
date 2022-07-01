@@ -30,7 +30,7 @@
     <!--<header>-->
     <header class="header">
         <img class="top-circles" src="img/mobile-menu/Top-circles.svg" alt="top-circles">
-        
+
 
         <nav class="nav-bar">
             <div class="placeholder">
@@ -145,22 +145,28 @@
         </section>
 
         <div class="items">
-            <ul class="social">
-                <li class="icon"><img src="img/Icon-GitHub.svg" alt=""></li>
-                <li class="icon"><img src="img/Icon-Linkedin.svg" alt=""></li>
-                <li class="icon"><img src="img/Icon-Angelist.svg" alt=""></li>
-                <li class="icon"><img src="img/Icon-Twitter.svg" alt=""></li>
-                <li class="icon"><img src="img/Icon-Medium.svg" alt=""></li>
-            </ul>
+            <div id="left-element">
+                <ul class="social">
+                    <li class="icon"><img src="img/Icon-GitHub.svg" alt=""></li>
+                    <li class="icon"><img src="img/Icon-Linkedin.svg" alt=""></li>
+                    <li class="icon"><img src="img/Icon-Angelist.svg" alt=""></li>
+                    <li class="icon"><img src="img/Icon-Twitter.svg" alt=""></li>
+                    <li class="icon"><img src="img/Icon-Medium.svg" alt=""></li>
+                </ul>
+                <a class="one-element" href="#">
+                    <p> Work </p><i class="fa-solid fa-arrow-down"></i>
+                </a>
+                <a class="element-two" href="#"><i class="fa-solid fa-arrow-down"></i>
+                    <p>Work </p>
+                </a>
+            </div>
         </div>
 
     </header>
     <section id="about" class="works">
         <img class="dash" src="img/work/portfolio-background-shapes-mobile.svg" alt="circles">
-        <div id="left-element">
-            <a class="left-element" href="#"><p>Work </p><i class="fa-solid fa-arrow-down"></i></a>
-            <a class="element-two" href="#"><i class="fa-solid fa-arrow-down"></i><p>Work </p></a>
-        </div>
+        <img class="group-65" src="img/Desktop/Group-65@2x.png" alt="circles">
+
 
         <div class="title-work">
             <h4 id="works">MY RECENT <br> WORK</h4>
@@ -196,7 +202,7 @@
                 <!--</div>-->
             </article>
 
-            <article class="stories multi">
+            <article class="stories" id="multi">
 
                 <div class="img-placeholder">
                     <!-- <img src="img/work/Img-Placeholder.svg" alt="">-->
@@ -310,17 +316,19 @@
 
                 <label for="full-name">
 
-                    <input type="text" name="fullName" id="fullName" placeholder=" Full name " maxlength="30">
+                    <input type="text" name="fullName" id="fullName" placeholder=" Full name " maxlength="30"
+                        value="fullName" required>
 
                 </label>
 
                 <label for="mail">
-                    <input type="email" name="email" id="mail" placeholder="  ujvari65@gmail.com" required>
+                    <input type="email" name="email" id="mail" placeholder="  ujvari65@gmail.com" value="email"
+                        required>
                 </label>
 
                 <label for="msg">
                     <textarea name="mesage" id="msg" cols="30" rows="10" maxlength="500" placeholder="  Enter text here"
-                        required></textarea>
+                        value="msg" required></textarea>
                 </label>
                 <label for="button">
                     <button type="submit" onclick="test" id="button-footer">Send</button>

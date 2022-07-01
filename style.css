@@ -539,7 +539,7 @@ li {
   margin-top: -24vh;
 }
 
-.left-element {
+.one-element {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -701,7 +701,7 @@ li {
   width: 62vh;
   padding: 0;
   gap: 24px;
-  margin-left: 25vh;
+  margin-left: 26vh;
 }
 
 .block h5 {
@@ -1342,42 +1342,47 @@ form button:hover {
   }
 
   .items {
-    display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;
-    height: 40px;
+    justify-content: space-between;
     flex: none;
     order: 2;
     flex-grow: 0;
     margin-left: 27px;
-    margin-top: 8vh;
   }
 
   #left-element {
+    margin-left: 125.5px;
+    gap: 224px;
+    margin-top: 24px;
+    height: auto;
+  }
+
+  .one-element {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 4px 0;
-    margin-left: 125.5px;
-    gap: 12px;
+    width: 96px;
+    gap: 2vh;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin-top: 24px;
+    color: #b3bac5;
   }
 
   .social {
     padding-left: 0;
+    order: 1;
   }
 
   .element-two {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 4px 0;
     width: 96px;
     flex: none;
+    gap: 2vh;
     order: 2;
     flex-grow: 0;
     color: #b3bac5;
@@ -1388,7 +1393,6 @@ form button:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 1.25em;
     font-weight: 500;
-    line-height: 2em;
     letter-spacing: 0;
     text-align: center;
     font-style: normal;
@@ -1402,7 +1406,6 @@ form button:hover {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-left: 142px;
     height: auto;
     padding: 0;
   }
@@ -1421,14 +1424,11 @@ form button:hover {
     align-items: flex-start;
     padding: 0;
     gap: 24px;
-    height: 155px;
     flex: none;
     order: 0;
     flex-grow: 0;
     margin-top: 114px;
-    margin-bottom: 88px;
     margin-left: -5.2vh;
-    border-bottom: #555 solid 1px;
   }
 
   #works {
@@ -1444,7 +1444,6 @@ form button:hover {
     text-align: left;
     color: rgb(148, 144, 255);
     width: 444px;
-    height: 114px;
     display: flex;
     align-items: center;
     margin-left: 142px;
@@ -1454,12 +1453,14 @@ form button:hover {
   }
 
   .devider {
-    display: none;
+    max-width: 100%;
+    width: 90%;
+    margin-left: 13vh;
+    color: #555;
   }
 
   .articles {
     height: auto;
-    margin-top: 88px;
   }
 
   .stories {
@@ -1471,8 +1472,8 @@ form button:hover {
 
   .img-placeholder {
     background: linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255)), url(image_processing20200716-21735-f07s4k.png);
-    width: 110.8vh;
-    height: 448px;
+    width: 130.8vh;
+    height: 74vh;
     transition: 0.3s ease-in-out;
   }
 
@@ -1508,6 +1509,17 @@ form button:hover {
 
   .dash {
     display: none;
+  }
+
+  .group-65 {
+    max-width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 100;
+    width: 105%;
+    margin-top: 80vh;
   }
 
   .contact-page {
@@ -1573,6 +1585,7 @@ form button:hover {
     width: 448px;
     height: 405px;
     gap: 24px;
+    margin-left: 10vh;
   }
 
   .social-icon {
