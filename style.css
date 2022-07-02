@@ -1763,3 +1763,18 @@ form button:hover {
     display: none;
   }
 }
+
+.feedback {
+  color: #ff0;
+  text-align: center;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.error {
+  border: 2px solid #dc3545;
+}
+
+.success {
+  border: 2px solid #00c800;
+}
