@@ -28,8 +28,9 @@
 <body>
 
     <!--<header>-->
-    <header>
+    <header class="header">
         <img class="top-circles" src="img/mobile-menu/Top-circles.svg" alt="top-circles">
+
 
         <nav class="nav-bar">
             <div class="placeholder">
@@ -38,21 +39,34 @@
                 <!--</div>-->
             </div>
 
-            <div class="nav-menu">
-                <ul class="nav-ul">
+            <!--<div class="nav-menu">-->
+            <ul class="nav-ul nav-menu">
+                <li class="portfolio">
+                    <a href="#" class="nav-link span1">Portfolio</a>
+
+                </li>
+                <li class="about">
+                    <a href="#about" class="nav-link span2">About</a>
+                </li>
+                <li class="chat">
+                    <a href="#contact" class="nav-link span3">Contact</a>
+
+                </li>
+            </ul>
+            <!-- </div>-->
+
+            <div id="nav-menu">
+                <ul id="nav-ul">
                     <li class="portfolio">
-                        <a href="#" class="nav-link span1">Portfolio</a><a href="#"><i
-                                class="fa-solid fa-angle-right"></i></a>
+                        <a href="#" class="nav-link span1">Portfolio</a>
 
                     </li>
                     <li class="about">
-                        <a href="#about" class="nav-link span2">About</a><a href="#about"><i
-                                class="fa-solid fa-angle-right"></i></a>
+                        <a href="#about" class="nav-link span2">About</a>
 
                     </li>
                     <li class="chat">
-                        <a href="#contact" class="nav-link span3">Contact</a><a href="#contact"><i
-                                class="fa-solid fa-angle-right"></i></a>
+                        <a href="#contact" class="nav-link span3">Contact</a>
 
                     </li>
                 </ul>
@@ -68,11 +82,11 @@
         </nav>
 
         <section class="headline">
-
-            <div class="headline-title subtitle">
-                <h1>Aleksandra Ujvari</h1>
-                <h2>Software Developer</h2>
-            </div>
+            <img class="desk-cir" src="img/two-circles-header.svg" alt="top-circles">
+            <!--<div class="headline-title subtitle">-->
+            <h1 class="headline-title h1">Aleksandra Ujvari</h1>
+            <h2 class="headline-subtitle h2">Software Developer</h2>
+            <!-- </div>-->
         </section>
 
         <section class="supporting-text">
@@ -127,35 +141,32 @@
                     </ul>
                 </div>
             </article>
+            <hr class="hr">
         </section>
 
         <div class="items">
-            <hr class="solid-border">
-
-            <ul class="social">
-                <li class="icon"><img src="img/Icon-GitHub.svg" alt=""></li>
-                <li class="icon"><img src="img/Icon-Linkedin.svg" alt=""></li>
-                <li class="icon"><img src="img/Icon-Angelist.svg" alt=""></li>
-                <li class="icon"><img src="img/Icon-Twitter.svg" alt=""></li>
-                <li class="icon"><img src="img/Icon-Medium.svg" alt=""></li>
-            </ul>
+            <div id="left-element">
+                <ul class="social">
+                    <li class="icon"><img src="img/Icon-GitHub.svg" alt=""></li>
+                    <li class="icon"><img src="img/Icon-Linkedin.svg" alt=""></li>
+                    <li class="icon"><img src="img/Icon-Angelist.svg" alt=""></li>
+                    <li class="icon"><img src="img/Icon-Twitter.svg" alt=""></li>
+                    <li class="icon"><img src="img/Icon-Medium.svg" alt=""></li>
+                </ul>
+                <a class="one-element" href="#">
+                    <p> Work </p><i class="fa-solid fa-arrow-down"></i>
+                </a>
+                <a class="element-two" href="#"><i class="fa-solid fa-arrow-down"></i>
+                    <p>Work </p>
+                </a>
+            </div>
         </div>
 
     </header>
     <section id="about" class="works">
         <img class="dash" src="img/work/portfolio-background-shapes-mobile.svg" alt="circles">
-        <div id="left-element">
-            <a class="left-element" href="#"><i class="fa-solid fa-arrow-down"></i>
-                <p>Work </p>
-            </a>
-        </div>
-        <div id="element-two">
-            <a class="element-two" href="#"><i class="fa-solid fa-arrow-down">
-                    <p> Work</p>
-                </i>
+        <img class="group-65" src="img/Desktop/Group-65@2x.png" alt="circles">
 
-            </a>
-        </div>
 
         <div class="title-work">
             <h4 id="works">MY RECENT <br> WORK</h4>
@@ -191,12 +202,12 @@
                 <!--</div>-->
             </article>
 
-            <article class="stories">
+            <article class="stories" id="multi">
 
                 <div class="img-placeholder">
                     <!-- <img src="img/work/Img-Placeholder.svg" alt="">-->
                 </div>
-                <div class="block">
+                <div class="block" id="reverse">
                     <h5>Multi-Post Stories</h5>
                     <p>
                         A daily selection of privately personalized reads; no accounts or sign-ups required. has been
@@ -240,7 +251,7 @@
                 <div class="img-placeholder">
                     <!-- <img src="img/work/Img-Placeholder.svg" alt="">-->
                 </div>
-                <div class="block">
+                <div class="block" id="post-multi">
                     <h5>Multi-Post Stories</h5>
                     <p>
                         A daily selection of privately personalized reads; no accounts or sign-ups required. has been
@@ -305,27 +316,33 @@
 
                 <label for="full-name">
 
-                    <input type="text" name="fullName" id="fullName" placeholder=" Full name " maxlength="30">
+
+                    <input type="text" name="fullName" id="fullName" placeholder=" Full name " maxlength="30"
+                        value="fullName" required>
 
                 </label>
 
                 <label for="mail">
-                    <input type="email" name="email" id="mail" placeholder="  ujvari65@gmail.com" required>
+
+                   <input type="email" name="email" id="mail" placeholder="  ujvari65@gmail.com" value="email"
+                        required>
                 </label>
+
+                <label for="msg">
+                    <textarea name="mesage" id="msg" cols="30" rows="10" maxlength="500" placeholder="  Enter text here"
+                        value="msg" required></textarea>
 
                 <label for="msg">
                     <textarea name="mesage" id="msg" cols="30" rows="10" maxlength="500"
                         placeholder="  Enter text here" required></textarea>
                 </label>
-                <label for="button">
-                    <button type="submit" onclick="test" id="button-footer">Send</button>
-                </label>
+                
 
                 <div class="feedback"></div>
                 <button onclick="validate('lowerCase')" type="submit" id="button-footer">Send</button>
             </form>
         </article>
-
+        <hr class="bor-foo">
         <section class="footer">
 
             <div class="fosocial-media">
