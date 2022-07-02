@@ -1,5 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
 
 * {
@@ -295,6 +293,11 @@ a {
   flex-grow: 0;
 }
 
+.hr {
+  max-width: 100%;
+  width: 580px;
+}
+
 .first {
   width: 63.9vh;
   font-family: 'Roboto', sans-serif;
@@ -352,9 +355,11 @@ a {
   padding: 1.04vh 1.56vh;
   gap: 1.56vh;
   width: 27.6vh;
+  height: 6vh;
   font-family: 'Roboto', sans-serif;
   font-size: 0.75em;
   font-weight: 500;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
   text-align: left;
   color: #9490ff;
@@ -389,12 +394,14 @@ a {
 
 .frame24 {
   width: 19.2vh;
+  height: 4.68vh;
   order: 1;
 }
 
 .frame25,
 .frame26 {
   width: 13.51vh;
+  height: 4.69vh;
   order: 2;
 }
 
@@ -419,9 +426,11 @@ li {
   padding: 1.05vh 1.59vh;
   gap: 1.59vh;
   width: 30.95vh;
+  height: 6vh;
   font-family: 'Roboto', sans-serif;
   font-size: 0.75em;
   font-weight: 500;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
   color: rgb(148, 144, 255);
   text-align: left;
@@ -432,12 +441,13 @@ li {
   flex-direction: column;
   align-items: flex-start;
   padding: 0 1.53vh;
-  gap: 0.03vh;
+  gap: 1.03vh;
   width: 23.8vh;
+  height: 29.8vh;
   font-family: 'Roboto', sans-serif;
   font-size: 0.94em;
   font-weight: 400;
-  line-height: 1.7em;
+  line-height: 1.5em;
   letter-spacing: 0;
   text-align: left;
   color: rgb(245, 245, 255);
@@ -454,23 +464,28 @@ li {
 }
 
 .frame13 {
-  width: 15.6vh;
+  width: 14.6vh;
+  height: 6.14vh;
 }
 
 .frame14 {
   width: 20.74vh;
+  height: 6.14vh;
 }
 
 .frame15 {
   width: 14.6vh;
+  height: 6.14vh;
 }
 
 .frame16 {
   width: 14.6vh;
+  height: 6.14vh;
 }
 
 .frame17 {
   width: 14.6vh;
+  height: 6.14vh;
 }
 
 .skills {
@@ -480,6 +495,7 @@ li {
   padding: 0;
   gap: 3.17vh;
   width: 24.2vh;
+  height: 44.9vh;
   order: 1;
 }
 
@@ -487,9 +503,10 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1.06vh 1.59vh;
+  padding-left: 1.59vh;
   gap: 1.59vh;
   width: 24.2vh;
+  height: 5.33vh;
   font-family: 'Roboto', sans-serif;
   color: rgb(148, 144, 255);
   font-size: 0.75em;
@@ -506,11 +523,12 @@ li {
   flex-direction: column;
   align-items: flex-start;
   padding: 0 8px;
-  gap: 11.33px;
   width: 24.8vh;
+  height: 35.98vh;
   font-family: 'Roboto', sans-serif;
   font-size: 0.94em;
   font-weight: 400;
+  line-height: 1.5em;
   letter-spacing: 0;
   text-align: left;
   color: #f5f5ff;
@@ -527,22 +545,23 @@ li {
   flex-direction: row;
   align-items: flex-start;
   width: 18.08vh;
+  height: 6.35vh;
 }
 
 #left-element {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  height: 7.94vh;
   gap: 2.38vh;
-  margin-top: -24vh;
 }
 
 .one-element {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
+  gap: 10px;
   font-size: 1.25em;
   line-height: 2em;
   text-align: center;
@@ -580,7 +599,6 @@ li {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  width: 39.68vh;
   height: 7.94vh;
   flex: none;
   order: 0;
@@ -592,8 +610,6 @@ li {
   flex-direction: row;
   align-items: flex-start;
   padding: 1.59vh;
-  width: 7.94vh;
-  height: 7.94vh;
   border-radius: 1.59vh;
   flex: none;
   order: 0;
@@ -606,6 +622,10 @@ li {
 }
 
 /* Section Works */
+
+.group-65 {
+  display: none;
+}
 
 .works {
   display: grid;
@@ -710,7 +730,6 @@ li {
   font-style: normal;
   font-weight: 500;
   font-size: 2em;
-  line-height: 2.75em;
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
@@ -767,7 +786,7 @@ li {
   position: relative;
   z-index: 100;
   justify-content: center;
-  font-size: 1.3em;
+  font-size: 0.8em;
 }
 
 #popup-ul {
@@ -830,8 +849,6 @@ li {
   cursor: pointer;
   font-size: 2.25rem;
   font-weight: 300;
-  width: 4.76vh;
-  height: 4.76vh;
   background-color: transparent;
 }
 
@@ -981,8 +998,8 @@ li {
 button {
   font-family: 'Roboto', sans-serif;
   font-size: 0.75em;
+  width: 18vh;
   font-weight: 500;
-  line-height: 1.5em;
   text-align: center;
   color: #edecff;
   background: #7d73fc;
@@ -992,10 +1009,8 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 2.38vh;
   gap: 1.98vh;
-  width: 17.66vh;
-  height: 9.52vh;
+  height: 7.52vh;
   border: none;
 }
 
@@ -1128,9 +1143,13 @@ form button:hover {
   gap: 1.6vh;
   height: 14.3vh;
   left: 0;
-  border-top: #555 solid 1px;
   max-width: 100%;
   width: 58.7vh;
+}
+
+.bor-foo {
+  max-width: 100%;
+  width: 100%;
 }
 
 .fosocial-media {
@@ -1352,6 +1371,7 @@ form button:hover {
   }
 
   #left-element {
+    flex-direction: row;
     margin-left: 125.5px;
     gap: 224px;
     margin-top: 24px;
@@ -1374,6 +1394,7 @@ form button:hover {
   .social {
     padding-left: 0;
     order: 1;
+    height: auto;
   }
 
   .element-two {
@@ -1477,11 +1498,57 @@ form button:hover {
     transition: 0.3s ease-in-out;
   }
 
+  .block {
+    width: 448px;
+    gap: 18px;
+    margin-left: 5vh;
+    margin-right: 15vh;
+  }
+
+  .block h5 {
+    height: auto;
+  }
+
+  .block > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    width: auto;
+    font-weight: 400;
+    line-height: 1.75em;
+    letter-spacing: 0;
+    text-align: left;
+    color: rgb(220, 220, 232);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  #multi {
+    flex-direction: row-reverse;
+  }
+
+  #multi-post {
+    flex-direction: row-reverse;
+  }
+
+  #reverse {
+    width: 448px;
+    gap: 18px;
+    margin-right: -7vh;
+    margin-left: 24vh;
+  }
+
+  #post-multi {
+    width: 448px;
+    gap: 18px;
+    margin-right: -7vh;
+    margin-left: 24vh;
+  }
+
   .popup-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 400;
-    line-height: 1em;
     letter-spacing: 0;
   }
 
@@ -1491,15 +1558,33 @@ form button:hover {
     margin-left: 36.2vh;
   }
 
+  .popup-image {
+    max-width: 100%;
+    width: 1108px;
+  }
+
   .popup-description {
     line-height: 1.9em;
     letter-spacing: 0;
     text-align: center;
+    width: 100%;
+  }
+
+  .popup-header .close-button {
+    height: 8.1vh;
   }
 
   .popup-buttons {
     flex-direction: row;
     gap: 75px;
+  }
+
+  #enable {
+    width: 27vh;
+  }
+
+  #hover {
+    width: 23vh;
   }
 
   #popup-ul {
@@ -1517,9 +1602,9 @@ form button:hover {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    z-index: 100;
+    z-index: -1;
     width: 105%;
-    margin-top: 80vh;
+    margin-top: -126vh;
   }
 
   .contact-page {
@@ -1530,8 +1615,8 @@ form button:hover {
     gap: 88px;
     position: absolute;
     width: 684px;
-    height: 867px;
-    left: 378px;
+    height: auto;
+    left: 187px;
     margin-top: 10px;
   }
 
@@ -1573,26 +1658,27 @@ form button:hover {
     margin-left: 142px;
   }
 
-  #multi {
-    flex-direction: row-reverse;
-  }
-
-  #multi-post {
-    flex-direction: row-reverse;
-  }
-
-  .block {
-    width: 448px;
-    height: 405px;
-    gap: 24px;
-    margin-left: 10vh;
-  }
-
   .social-icon {
     align-items: center;
     padding-top: 15px;
     justify-content: center;
     margin-top: 224px;
+  }
+
+  .fosocial-media {
+    width: 54.7vh;
+    height: 10.94vh;
+    margin-top: 20vh;
+    margin-left: 30vh;
+  }
+
+  .fosocial-icon {
+    height: 5.93vh;
+  }
+
+  .description {
+    width: 61.85vh;
+    padding-left: 3vh;
   }
 
   .items-icon {
@@ -1605,7 +1691,14 @@ form button:hover {
     left: 0;
     border-radius: 0;
     flex-direction: row;
-    height: 72px;
+    max-width: 100%;
+    width: 500vh;
+    height: auto;
+    border-top: #555 1px solid;
+  }
+
+  .bor-foo {
+    display: none;
   }
 
   .h6 {
@@ -1627,7 +1720,7 @@ form button:hover {
     font-size: 15px;
     justify-content: center;
     margin-top: 89px;
-    margin-left: 300px;
+    margin-left: 290px;
   }
 
   #button-footer {
