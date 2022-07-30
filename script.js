@@ -5,14 +5,14 @@ const popup = document.querySelector('#popup');
 const closeButtonsIcon = document.querySelector('.close-button');
 const projects = {
   1: {
-    name: 'Multi - Post stories',
-    imageSrc: 'img/popup/Snapshoot-Portfolio.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting ever since the 1500s, when an unknown printer took a galley of type  veris lapoa todoe.',
+    name: 'Cat Gallery',
+    imageSrc: 'img/Screenshot-from-home-page.png',
+    description: 'This project is the part of the pair programing project from the end of the second module in Microverse. My part of work was Home-page. I added images dinmicaly tru JavaScript, and we used webpack for setup project and Jest for testing. More informations are available at https://dodoburner.github.io/cat-gallery/',
     languages: ['html', 'Ruby on rails', 'css'],
   },
   2: {
     name: 'Multi - Post stories',
-    imageSrc: 'img/popup/Snapshoot-Portfolio.png',
+    imageSrc: 'img/TO_DO.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting ever since the 1500s, when an unknown printer took a galley of type  veris lapoa todoe.',
     languages: ['html', 'php', 'css'],
   },

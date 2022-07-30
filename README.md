@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+# Aleksandra-Ujvari
+img
+=======
 
 # Alex's portfolio
+>>>>>>> main
 
 For this project is used the templates in Figma.
  Set up a linter for HTML, CSS and JS. Added a descriptive README file to the project. Added 4 files :
