@@ -35,7 +35,7 @@
         <nav class="nav-bar">
             <div class="placeholder">
                 <!--<div class="logo">-->
-                <a id="logo" href="#">Aleksandra Ujvari</a>
+                <a href="#"><img id="logo" src="img/Desktop/ALEKSANDRA-UJVARI.png" alt=""></a>
                 <!--</div>-->
             </div>
 
@@ -69,10 +69,15 @@
                         <a href="#contact" class="nav-link span3">Contact</a>
 
                     </li>
+                    <li>
+                        <a href="#contact"><img src="img/Desktop/Union.png" alt=""></a>
+                    </li>
+                    
                 </ul>
+
             </div>
 
-            <button type="button" class="mail"><img src="img/Desktop/Union.png" alt=""></button>
+
 
             <div class="hamburger">
                 <span class="bar1"></span>
@@ -178,16 +183,13 @@
         <section class="articles">
             <article class="stories">
                 <div class="img-placeholder">
-                    <!-- <img src="img/work/Img-Placeholder.svg" alt="">-->
+                    <img class="capstone" src="img/Screenshot-from-home-page.png" alt="">
                 </div>
                 <div class="block">
-                    <h5>Multi-Post Stories</h5>
+                    <h5>Cat Gallery</h5>
                     <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
-                        dummy
-                        text.
+                        This is the part of the pair programing project,
+                        at the end of the second module in Microverse.
                     </p>
                     <ul class="flex-container">
                         <li class="item1">css</li>
@@ -205,12 +207,13 @@
             <article class="stories" id="multi">
 
                 <div class="img-placeholder">
-                    <!-- <img src="img/work/Img-Placeholder.svg" alt="">-->
+                    <img src="img/work/Img-Placeholder.svg" alt="">
                 </div>
                 <div class="block" id="reverse">
                     <h5>Multi-Post Stories</h5>
                     <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        A daily selection of privately personalized reads; no accounts or sign-ups required. has
+                        been
                         the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
                         dummy
@@ -227,7 +230,7 @@
             </article>
             <article class="stories">
                 <div class="img-placeholder">
-                    <!-- <img src="img/work/Img-Placeholder.svg" alt="">-->
+                    <img src="img/work/Img-Placeholder.svg" alt="">
                 </div>
                 <div class="block">
                     <h5>Multi-Post Stories</h5>
@@ -249,7 +252,7 @@
             </article>
             <article class="stories" id="multi-post">
                 <div class="img-placeholder">
-                    <!-- <img src="img/work/Img-Placeholder.svg" alt="">-->
+                    <img src="img/work/Img-Placeholder.svg" alt="">
                 </div>
                 <div class="block" id="post-multi">
                     <h5>Multi-Post Stories</h5>
@@ -274,11 +277,11 @@
     <div class="popup d-none " id="popup">
         <div class="popup-container">
             <div class="popup-header">
-                <div class="popup-title">My project title</div>
+                <div class="popup-title">Cat Gallery</div>
                 <button type="button" data-close-button class="close-button">&times;</button>
             </div>
             <div class="popup-img">
-                <img src="img/popup/Snapshoot-Portfolio.png" alt="" class="popup-image">
+                <img src="img/Screenshot-from-home-page.png" alt="" class="popup-image">
             </div>
             <div class="popup-body">
                 <p class="popup-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -292,14 +295,14 @@
                     <li class="popup-li">css</li>
                 </ul>
                 <div class="popup-buttons">
-                    <button type="button" id="hover">See Live <img src="img/popup/export.svg" alt="icon"></button>
-                    <button type="button" id="enable">See Source <img src="img/popup/github.svg" alt="icon"></button>
+                    <button type="button" id="hover">>See Live<img src="img/popup/export.svg" alt="icon"></button>
+                    <button type="button" id="enable"> See Source<img src="img/popup/github.svg" alt="icon"></button>
                 </div>
             </div>
             <div class="active" id="overlay"></div>
         </div>
-
     </div>
+
     <section id="contact" class="contact-page">
         <article class="contact">
             <h6 class="h6">
@@ -314,7 +317,7 @@
         <article class="form">
             <form action="https://formspree.io/f/xvolyjvg" method="post" id="contact-form">
 
-                <label for="full-name">
+                <label for="fullName">
 
                     <input type="text" name="fullName" id="fullName" placeholder=" Full name " maxlength="30"
                         value="fullName" required>
@@ -328,7 +331,7 @@
 
                 <label for="msg">
                     <textarea name="mesage" id="msg" cols="30" rows="10" maxlength="500" placeholder="  Enter text here"
-                        value="msg" required></textarea>
+                        required></textarea>
                 </label>
 
                 <div class="feedback"></div>

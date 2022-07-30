@@ -1,3 +1,4 @@
+/* stylelint-disable no-missing-end-of-source-newline */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
 
 * {
@@ -23,13 +24,13 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
 }
 
 .top-circles {
   display: block;
   background-repeat: no-repeat;
-  height: 146.17vh;
+  height: auto;
   position: absolute;
   margin-top: 16vh;
   max-width: 100%;
@@ -42,7 +43,6 @@ header {
   background-size: contain;
   position: absolute;
   z-index: 100;
-  width: 105%;
   margin-top: 34vh;
 }
 
@@ -56,11 +56,7 @@ header {
   display: flex;
   cursor: pointer;
   flex-direction: column;
-  height: 14.8vh;
-  width: 14.8vh;
   margin-right: 8.66vh;
-  margin-top: 12.47vh;
-  border-radius: 50%;
 }
 
 .bar1 {
@@ -93,22 +89,17 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger.active {
-  margin-right: 4.7vh;
-  margin-top: 9.4vh;
-}
-
 .hamburger.active .bar2:nth-child(2) {
   opacity: 0;
 }
 
 .hamburger.active .bar1:nth-child(1) {
-  transform: translateY(5.5vh) rotate(49deg);
+  transform: translateY(1.5vh) rotate(49deg);
   width: 3.9vh;
 }
 
 .hamburger.active .bar3:nth-child(3) {
-  transform: translateY(0.45vh) rotate(-48deg);
+  transform: translateY(-3.55vh) rotate(-48deg);
   width: 3.9vh;
 }
 
@@ -127,13 +118,13 @@ header {
 .nav-menu.active {
   left: 0.15vh;
   padding-left: 2.23vh;
-  margin-top: -11px;
+  margin-top: -12vh;
   background-image: url(img/mobile-menu/shapes-mobile-menu.svg);
   background-repeat: no-repeat;
   background-position-y: top;
   background-size: cover;
   position: absolute;
-  padding-top: 74px;
+  padding-top: 20vh;
 }
 
 .nav-ul {
@@ -194,27 +185,19 @@ a {
 }
 
 .placeholder {
-  width: 35.54vh;
   left: 2.35vh;
   letter-spacing: 1em;
   border-radius: 0;
   margin-left: 2.69vh;
-  margin-top: 7.21vh;
 }
 
 #logo {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.125em;
   display: flex;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
   animation-duration: 2.5s;
   animation-name: spin;
   animation-iteration-count: 1;
+  width: 30vh;
 }
 
 #nav-menu {
@@ -638,8 +621,8 @@ li {
 
 .dash {
   position: absolute;
-  max-width: 94vh;
-  width: 100%;
+  max-width: 100%;
+  width: 100vh;
   margin-top: -206vh;
 }
 
@@ -696,21 +679,25 @@ li {
 }
 
 .img-placeholder {
-  background:
-    linear-gradient(0deg, #f9f9f9, #f9f9f9),
-    url(image_processing20200716-21735-f07s4k.svg);
-  color: #f9f9f9;
   height: 51.98vh;
+  display: flex;
   max-width: 100%;
-  width: 119vh;
+  width: 100%;
   flex: none;
   order: 0;
   flex-grow: 0;
   transition: all 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-placeholder:hover {
   transform: scale(1.1);
+}
+
+.img-placeholder img {
+  max-width: 100%;
+  width: 100%;
 }
 
 .block {
@@ -721,7 +708,7 @@ li {
   width: 62vh;
   padding: 0;
   gap: 24px;
-  margin-left: 26vh;
+  margin-left: 2vh;
 }
 
 .block h5 {
@@ -738,7 +725,7 @@ li {
   flex-grow: 0;
 }
 
-.block > p {
+.block p {
   font-family: 'Inter', sans-serif;
   font-size: 1.25em;
   font-weight: 400;
@@ -1182,6 +1169,10 @@ form button:hover {
 } */
 
 @media only screen and (min-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+
   .backgraund {
     display: none;
   }
@@ -1191,7 +1182,6 @@ form button:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 14.09vh;
   }
 
   #nav-menu {
@@ -1208,11 +1198,10 @@ form button:hover {
   #nav-ul {
     display: flex;
     flex-direction: row;
-    height: 7.94vh;
-    width: 47.82vh;
     margin-top: 3.17vh;
     border-radius: 0;
     margin-left: 119.04vh;
+    gap: 30px;
     align-items: center;
   }
 
@@ -1223,7 +1212,6 @@ form button:hover {
     font-style: normal;
     font-weight: 500;
     font-size: 0.94em;
-    line-height: 1.25em;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1236,7 +1224,6 @@ form button:hover {
     font-style: normal;
     font-weight: 500;
     font-size: 0.94em;
-    line-height: 1.25em;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1262,18 +1249,12 @@ form button:hover {
     align-items: flex-start;
     padding: 1.59vh;
     width: 7.94vh;
-    height: 7.94vh;
     margin-top: 5.36vh;
     margin-right: 28.17vh;
   }
 
   .placeholder {
     margin-left: 30.16vh;
-    margin-top: 3.17vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.98vh;
   }
 
   .top-circles {
@@ -1281,19 +1262,16 @@ form button:hover {
   }
 
   .desk-cir {
-    display: block;
+    display: flex;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     position: absolute;
-    z-index: 100;
-    width: 105%;
     margin-top: 43vh;
   }
 
   .headline {
     gap: 4.76vh;
-    height: 38.09vh;
-    margin-top: 36.9vh;
     justify-content: center;
     margin-left: 16%;
     margin-left: 2vh;
@@ -1492,24 +1470,34 @@ form button:hover {
   }
 
   .img-placeholder {
-    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255)), url(image_processing20200716-21735-f07s4k.png);
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255)), url(img/work/Img-Placeholder.svg);
     width: 130.8vh;
     height: 74vh;
     transition: 0.3s ease-in-out;
   }
 
+  .img-placeholder:hover {
+    transform: scale(1.05);
+  }
+
+  .img-placeholder img {
+    width: 100%;
+    margin-left: 89px;
+  }
+
   .block {
-    width: 448px;
+    display: flex;
     gap: 18px;
     margin-left: 5vh;
-    margin-right: 15vh;
+    margin-right: 20vh;
+    text-align: left;
   }
 
   .block h5 {
     height: auto;
   }
 
-  .block > p {
+  .block p {
     font-family: 'Inter', sans-serif;
     font-size: 1em;
     width: auto;
