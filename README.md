@@ -16,7 +16,7 @@ For this project is used the templates in Figma.
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://github.com/digia3d/Portfolio/settings/pages)
+[Live Demo Link]([https://github.com/digia3d/Portfolio/settings/pages](https://digia3d.github.io/Portfolio/))
 
 
 ## Getting Started
