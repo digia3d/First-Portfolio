@@ -1257,6 +1257,15 @@ form button:hover {
     margin-left: 30.16vh;
   }
 
+  .wallet {
+    display: flex;
+    background: transparent;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 74vh;
+    margin-right: 4em;
+  }
+
   .top-circles {
     display: none;
   }
@@ -1482,7 +1491,6 @@ form button:hover {
 
   .img-placeholder img {
     width: 100%;
-    margin-left: 89px;
   }
 
   .block {
