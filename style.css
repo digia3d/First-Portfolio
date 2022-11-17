@@ -776,7 +776,8 @@ li {
   font-size: 0.8em;
 }
 
-#popup-ul {
+#popup-ul,
+#popup-ul2 {
   display: flex;
   align-items: center;
   padding: 0;
@@ -853,7 +854,8 @@ li {
   gap: 4.76vh;
 }
 
-#hover {
+#hover,
+#hover2 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -873,7 +875,8 @@ li {
   flex-grow: 0;
 }
 
-#enable {
+#enable,
+#enable2 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -892,7 +895,8 @@ li {
   flex-grow: 0;
 }
 
-#overlay {
+#overlay,
+#overlay2 {
   position: fixed;
   opacity: 0;
   max-width: 100%;
@@ -906,7 +910,8 @@ li {
   pointer-events: none;
 }
 
-#overlay-active {
+#overlay-active,
+#overlay-active2 {
   opacity: 1;
   pointer-events: all;
 }
@@ -1575,15 +1580,18 @@ form button:hover {
     gap: 75px;
   }
 
-  #enable {
+  #enable,
+  #enable2 {
     width: 27vh;
   }
 
-  #hover {
+  #hover,
+  #hover2 {
     width: 23vh;
   }
 
-  #popup-ul {
+  #popup-ul,
+  #popup-ul2 {
     margin-top: 10.96vh;
     margin-bottom: 9.4vh;
   }
